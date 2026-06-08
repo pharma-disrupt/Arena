@@ -1,0 +1,32 @@
+{
+  "stage": 2,
+  "pipeline_id": "7b5d3abb-fe8c-4fea-8915-54d3e14f97eb",
+  "organism": "ecoli",
+  "molecule": "Lycopene",
+  "pathways_found": 1,
+  "enzymes_selected": 1,
+  "codon_optimised": 3,
+  "cassettes_designed": 3,
+  "gene_modifications": {
+    "knockouts": [
+      "ldhA",
+      "adhE",
+      "frdA"
+    ],
+    "overexpressions": [],
+    "heterologous_insertions": [
+      "dxs_alt1",
+      "ispD_alt1",
+      "dxs_alt2",
+      "dxr_alt1",
+      "dxr_alt2",
+      "dxs",
+      "dxr",
+      "ispd",
+      "ispD_alt2"
+    ]
+  },
+  "status": "PASS",
+  "duration_seconds": 0.04,
+  "timestamp": "2026-06-08T10:26:09.610780+00:00"
+}

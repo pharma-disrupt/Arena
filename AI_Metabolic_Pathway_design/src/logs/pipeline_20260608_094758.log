@@ -1,0 +1,6 @@
+2026-06-08 09:47:58 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_094758.log
+2026-06-08 09:47:58 | INFO     | STAGE:3 | info | Building stoichiometric matrix for organism='ecoli'
+2026-06-08 09:47:58 | INFO     | STAGE:3 | info | Built FBA model: 34 metabolites × 29 reactions
+2026-06-08 09:47:58 | INFO     | STAGE:3 | info | Model built: 34 mets × 29 rxns
+2026-06-08 09:47:58 | INFO     | STAGE:3 | info | Running FBA with solver='highs'
+2026-06-08 09:47:58 | ERROR    | STAGE:3 | error | FBA solver 'highs' failed with status 2: The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)

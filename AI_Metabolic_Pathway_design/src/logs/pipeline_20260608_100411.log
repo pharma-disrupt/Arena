@@ -1,0 +1,8 @@
+2026-06-08 10:04:11 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_100411.log
+2026-06-08 10:04:11 | INFO     | STAGE:4 | info | Running ODE simulation: organism=ecoli, duration=48.0 h, feed=0.50 g/L/h
+2026-06-08 10:04:11 | INFO     | STAGE:4 | info | Simulation complete: biomass=313.96 g/L, product=164.88 g/L, substrate=0.00 g/L, DO=100.0%
+2026-06-08 10:04:11 | INFO     | STAGE:4 | info | Final state: biomass=313.96, product=164.88, substrate=0.00
+2026-06-08 10:04:11 | INFO     | STAGE:4 | info | Calculating fed-batch feed profile: target=50.0 g/L
+2026-06-08 10:04:11 | INFO     | STAGE:4 | info | Feed profile: 72 time points, final cumulative=375.0 g/L
+2026-06-08 10:04:11 | INFO     | STAGE:4 | info | Time series saved to pipeline_output/fermentation_timeseries.csv
+2026-06-08 10:04:11 | INFO     | STAGE:4 | info | Fermentation results saved to pipeline_output/fermentation_results.json

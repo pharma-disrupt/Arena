@@ -1,0 +1,44 @@
+[
+  {
+    "volume_l": 2.0,
+    "kla_h": 5.0,
+    "mixing_time_s": 5.5,
+    "power_per_volume_w_per_l": 54.0,
+    "yield_loss_percent": 0.0,
+    "scale_factor": 1.0,
+    "comments": [
+      "Lab scale \u2014 shake flask or bench-top bioreactor",
+      "Acetate accumulation risk at large scale due to oxygen gradients",
+      "Heat generation high \u2014 requires efficient cooling at >500L",
+      "WARNING: kLa (5.0 h\u207b\u00b9) below recommended minimum (20 h\u207b\u00b9)"
+    ]
+  },
+  {
+    "volume_l": 200.0,
+    "kla_h": 5.0,
+    "mixing_time_s": 25.1,
+    "power_per_volume_w_per_l": 54.0,
+    "yield_loss_percent": 5.22,
+    "scale_factor": 100.0,
+    "comments": [
+      "Pilot scale \u2014 stirred-tank bioreactor",
+      "Acetate accumulation risk at large scale due to oxygen gradients",
+      "Heat generation high \u2014 requires efficient cooling at >500L",
+      "WARNING: kLa (5.0 h\u207b\u00b9) below recommended minimum (20 h\u207b\u00b9)"
+    ]
+  },
+  {
+    "volume_l": 20000.0,
+    "kla_h": 5.0,
+    "mixing_time_s": 85.0,
+    "power_per_volume_w_per_l": 5400.0,
+    "yield_loss_percent": 10.43,
+    "scale_factor": 100.0,
+    "comments": [
+      "Production scale \u2014 full GMP compliance required",
+      "Acetate accumulation risk at large scale due to oxygen gradients",
+      "Heat generation high \u2014 requires efficient cooling at >500L",
+      "WARNING: kLa (5.0 h\u207b\u00b9) below recommended minimum (20 h\u207b\u00b9)"
+    ]
+  }
+]

@@ -1,0 +1,2127 @@
+2026-06-08 09:43:41 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_094341.log
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | === STAGE 1 START === pipeline_id=f49521b5-f452-45b4-a5e5-491f2d856b56 organism=ecoli molecule=lycopene
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Loading organism config for key='ecoli'
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Organism loaded: {'name': 'Escherichia coli', 'strain': 'K-12 MG1655', 'gem_model_id': 'iML1515', 'doubling_time_min': 20.0, 'optimal_ph': 7.0, 'optimal_temp_c': 37.0, 'gram_stain': 'negative'}
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Loading molecule config for key='lycopene'
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Molecule loaded: {'name': 'Lycopene', 'smiles': 'CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C', 'chebi_id': 'CHEBI:15938', 'target_titer_g_per_l': 5.0, 'target_yield_mol_per_mol': 0.35}
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Loading genomic data for organism='ecoli'
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Genomic data loaded for ecoli: 4494 genes, 18 essential, codon table 11, GC=50.8%
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Genomic data: 4494 genes, codon table 11, GC=50.8%
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Running data quality checks
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Data quality report: score=1.000  warnings=0  errors=0
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Validating Stage 1 output against schema
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Schema validation: PASSED for stage_1_output
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | JSON contract [output | Stage 1 → Stage 2]: pipeline_id=f49521b5-f452-45b4-a5e5-491f2d856b56 | timestamp=2026-06-08T09:43:41.734925+00:00 | organism={name, strain, gem_model_id, doubling_time_min, optimal_ph} | target_molecule={name, smiles, chebi_id, target_titer_g_per_l, target_yield_mol_per_mol} | genomic_data={total_genes, essential_genes, available_promoters, codon_table_id, gc_content_percent} | data_quality_report={completeness_score, warnings, errors} | stage_1_status=PASS
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Full JSON payload:\n{
+  "pipeline_id": "f49521b5-f452-45b4-a5e5-491f2d856b56",
+  "timestamp": "2026-06-08T09:43:41.734925+00:00",
+  "organism": {
+    "name": "Escherichia coli",
+    "strain": "K-12 MG1655",
+    "gem_model_id": "iML1515",
+    "doubling_time_min": 20.0,
+    "optimal_ph": 7.0,
+    "optimal_temp_c": 37.0,
+    "gram_stain": "negative"
+  },
+  "target_molecule": {
+    "name": "Lycopene",
+    "smiles": "CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C",
+    "chebi_id": "CHEBI:15938",
+    "target_titer_g_per_l": 5.0,
+    "target_yield_mol_per_mol": 0.35
+  },
+  "genomic_data": {
+    "total_genes": 4494,
+    "essential_genes": [
+      "dnaA",
+      "dnaN",
+      "dnaG",
+      "rpoB",
+      "rpoC",
+      "rpoA",
+      "gyrA",
+      "gyrB",
+      "ftsZ",
+      "ftsA",
+      "murA",
+      "murB",
+      "tufA",
+      "tufB",
+      "rplA",
+      "rplB",
+      "rplC",
+      "rplD"
+    ],
+    "available_promoters": [
+      "Ptac",
+      "Ptrc",
+      "Plac",
+      "ParaBAD",
+      "PT7",
+      "PlacUV5",
+      "Pbad",
+      "PrhaBAD"
+    ],
+    "codon_table_id": 11,
+    "gc_content_percent": 50.8
+  },
+  "data_quality_report": {
+    "completeness_score": 1.0,
+    "warnings": [],
+    "errors": []
+  },
+  "stage_1_status": "PASS"
+}
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Stage 1 summary written to logs/stage_1_summary.json
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | === STAGE 1 COMPLETE === duration=0.00s status=PASS
+2026-06-08 09:43:41 | INFO     | STAGE:1 | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_094341.log
+2026-06-08 09:43:41 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_094341.log
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | === STAGE 2 START === pipeline_id=f49521b5-f452-45b4-a5e5-491f2d856b56
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | === STAGE 2 START === pipeline_id=f49521b5-f452-45b4-a5e5-491f2d856b56
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Input JSON received: {'pipeline_id': 'f49521b5-f452-45b4-a5e5-491f2d856b56', 'timestamp': '2026-06-08T09:43:41.734925+00:00', 'organism': {'name': 'Escherichia coli', 'strain': 'K-12 MG1655', 'gem_model_id': 'iML1515', 'doubling_time_min': 20.0, 'optimal_ph': 7.0, 'optimal_temp_c': 37.0, 'gram_stain': 'negative'}, 'target_molecule': {'name': 'Lycopene', 'smiles': 'CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C', 'chebi_id': 'CHEBI:15938', 'target_titer_g_per_l': 5.0, 'target_yield_mol_per_mol': 0.35}, 'genomic_data': {'total_genes': 4494, 'essential_genes': ['dnaA', 'dnaN', 'dnaG', 'rpoB', 'rpoC', 'rpoA', 'gyrA', 'gyrB', 'ftsZ', 'ftsA', 'murA', 'murB', 'tufA', 'tufB', 'rplA', 'rplB', 'rplC', 'rplD'], 'available_promoters': ['Ptac', 'Ptrc', 'Plac', 'ParaBAD', 'PT7', 'PlacUV5', 'Pbad', 'PrhaBAD'], 'codon_table_id': 11, 'gc_content_percent': 50.8}, 'data_quality_report': {'completeness_score': 1.0, 'warnings': [], 'errors': []}, 'stage_1_status': 'PASS'}
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Input JSON received: {'pipeline_id': 'f49521b5-f452-45b4-a5e5-491f2d856b56', 'timestamp': '2026-06-08T09:43:41.734925+00:00', 'organism': {'name': 'Escherichia coli', 'strain': 'K-12 MG1655', 'gem_model_id': 'iML1515', 'doubling_time_min': 20.0, 'optimal_ph': 7.0, 'optimal_temp_c': 37.0, 'gram_stain': 'negative'}, 'target_molecule': {'name': 'Lycopene', 'smiles': 'CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C', 'chebi_id': 'CHEBI:15938', 'target_titer_g_per_l': 5.0, 'target_yield_mol_per_mol': 0.35}, 'genomic_data': {'total_genes': 4494, 'essential_genes': ['dnaA', 'dnaN', 'dnaG', 'rpoB', 'rpoC', 'rpoA', 'gyrA', 'gyrB', 'ftsZ', 'ftsA', 'murA', 'murB', 'tufA', 'tufB', 'rplA', 'rplB', 'rplC', 'rplD'], 'available_promoters': ['Ptac', 'Ptrc', 'Plac', 'ParaBAD', 'PT7', 'PlacUV5', 'Pbad', 'PrhaBAD'], 'codon_table_id': 11, 'gc_content_percent': 50.8}, 'data_quality_report': {'completeness_score': 1.0, 'warnings': [], 'errors': []}, 'stage_1_status': 'PASS'}
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Validating Stage 1 input JSON
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | Validating Stage 1 input JSON
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Schema validation: PASSED for stage_1_output
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | Schema validation: PASSED for stage_1_output
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Organism: ecoli | Molecule: Lycopene
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | Organism: ecoli | Molecule: Lycopene
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Running retrosynthesis for target='Lycopene'
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | Running retrosynthesis for target='Lycopene'
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Running enzyme selection for 1 pathways
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | Running enzyme selection for 1 pathways
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Running codon optimisation
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | Running codon optimisation
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 0, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 0, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 1, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 1, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 2, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 2, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 3, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 3, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 4, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 4, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 5, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 5, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 6, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 6, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 7, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 7, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 8, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 8, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 9, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 9, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 10, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 10, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 11, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 11, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 12, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 12, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 13, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 13, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 14, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 14, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 15, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 15, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 16, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 16, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 17, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 17, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 18, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 18, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 19, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 19, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 20, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 20, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 21, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 21, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 22, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 22, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 23, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 23, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 24, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 24, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 25, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 25, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 26, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 26, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 27, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 27, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 28, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 28, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 29, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 29, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 30, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 30, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 31, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 31, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 32, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 32, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 33, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 33, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 34, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 34, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 35, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 35, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 36, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 36, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 37, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 37, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 38, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 38, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 39, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 39, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 40, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 40, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 41, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 41, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 42, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 42, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 43, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 43, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 44, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 44, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 45, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 45, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 46, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 46, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 47, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 47, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 48, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 48, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 49, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 49, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 50, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 50, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 51, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 51, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 52, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 52, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 53, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 53, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 54, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 54, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 55, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 55, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 56, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 56, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 57, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 57, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 58, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 58, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 59, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 59, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 60, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 60, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 61, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 61, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 62, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 62, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 63, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 63, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 64, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 64, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 65, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 65, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 66, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 66, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 67, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 67, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 68, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 68, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 69, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 69, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 70, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 70, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 71, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 71, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 72, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 72, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 73, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 73, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 74, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 74, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 75, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 75, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 76, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 76, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 77, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 77, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 78, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 78, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 79, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 79, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 80, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 80, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 81, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 81, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 82, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 82, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 83, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 83, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 84, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 84, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 85, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 85, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 86, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 86, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 87, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 87, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 88, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 88, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 89, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 89, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 90, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 90, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 91, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 91, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 92, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 92, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 93, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 93, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 94, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 94, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 95, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 95, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 96, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 96, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 97, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 97, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 98, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 98, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 99, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 99, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 100, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 100, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 101, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 101, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 102, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 102, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 103, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 103, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 104, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 104, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 105, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 105, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 106, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 106, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 107, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 107, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 108, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 108, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 109, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 109, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 110, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 110, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 111, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 111, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 112, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 112, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 113, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 113, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 114, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 114, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 115, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 115, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 116, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 116, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 117, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 117, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 118, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 118, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 119, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 119, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 120, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 120, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 121, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 121, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 122, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 122, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 123, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 123, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 124, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 124, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 125, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 125, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 126, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 126, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 127, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 127, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 128, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 128, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 129, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 129, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 130, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 130, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 131, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 131, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 132, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 132, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 133, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 133, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 134, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 134, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 135, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 135, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 136, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 136, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 137, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 137, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 138, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 138, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 139, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 139, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 140, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 140, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 141, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 141, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 142, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 142, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 143, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 143, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 144, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 144, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 145, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 145, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 146, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 146, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 147, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 147, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 148, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 148, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 149, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 149, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 150, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 150, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 151, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 151, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 152, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 152, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 153, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 153, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 154, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 154, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 155, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 155, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 156, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 156, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 157, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 157, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 158, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 158, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 159, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 159, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 160, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 160, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 161, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 161, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 162, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 162, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 163, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 163, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 164, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 164, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 165, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 165, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 166, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 166, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 167, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 167, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 168, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 168, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 169, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 169, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 170, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 170, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 171, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 171, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 172, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 172, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 173, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 173, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 174, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 174, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 175, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 175, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 176, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 176, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 177, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 177, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 178, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 178, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 179, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 179, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 180, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 180, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 181, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 181, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 182, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 182, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 183, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 183, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 184, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 184, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 185, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 185, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 186, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 186, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 187, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 187, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 188, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 188, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 189, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 189, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 190, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 190, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 191, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 191, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 192, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 192, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 193, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 193, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 194, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 194, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 195, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 195, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 196, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 196, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 197, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 197, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 198, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 198, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 199, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 199, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 200, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 200, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 201, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 201, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 202, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 202, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 203, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 203, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 204, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 204, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 205, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 205, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 206, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 206, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 207, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 207, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 208, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 208, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 209, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 209, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 210, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 210, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 211, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 211, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 212, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 212, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 213, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 213, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 214, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 214, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 215, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 215, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 216, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 216, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 217, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 217, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 218, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 218, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 219, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 219, skipping
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Optimised sequence: len=0 bp, GC=0.0%
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Optimised sequence: len=0 bp, GC=0.0%
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 0, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 0, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 1, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 1, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 2, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 2, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 3, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 3, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 4, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 4, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 5, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 5, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 6, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 6, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 7, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 7, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 8, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 8, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 9, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 9, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 10, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 10, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 11, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 11, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 12, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 12, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 13, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 13, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 14, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 14, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 15, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 15, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 16, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 16, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 17, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 17, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 18, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 18, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 19, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 19, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 20, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 20, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 21, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 21, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 22, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 22, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 23, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 23, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 24, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 24, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 25, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 25, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 26, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 26, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 27, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 27, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 28, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 28, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 29, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 29, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 30, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 30, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 31, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 31, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 32, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 32, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 33, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 33, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 34, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 34, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 35, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 35, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 36, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 36, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 37, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 37, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 38, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 38, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 39, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 39, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 40, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 40, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 41, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 41, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 42, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 42, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 43, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 43, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 44, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 44, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 45, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 45, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 46, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 46, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 47, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 47, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 48, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 48, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 49, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 49, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 50, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 50, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 51, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 51, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 52, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 52, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 53, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 53, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 54, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 54, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 55, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 55, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 56, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 56, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 57, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 57, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 58, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 58, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 59, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 59, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 60, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 60, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 61, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 61, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 62, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 62, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 63, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 63, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 64, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 64, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 65, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 65, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 66, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 66, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 67, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 67, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 68, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 68, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 69, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 69, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 70, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 70, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 71, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 71, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 72, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 72, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 73, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 73, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 74, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 74, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 75, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 75, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 76, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 76, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 77, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 77, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 78, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 78, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 79, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 79, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 80, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 80, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 81, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 81, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 82, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 82, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 83, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 83, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 84, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 84, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 85, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 85, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 86, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 86, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 87, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 87, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 88, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 88, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 89, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 89, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 90, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 90, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 91, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 91, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 92, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 92, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 93, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 93, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 94, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 94, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 95, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 95, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 96, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 96, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 97, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 97, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 98, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 98, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 99, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 99, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 100, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 100, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 101, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 101, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 102, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 102, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 103, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 103, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 104, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 104, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 105, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 105, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 106, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 106, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 107, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 107, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 108, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 108, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 109, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 109, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 110, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 110, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 111, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 111, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 112, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 112, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 113, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 113, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 114, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 114, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 115, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 115, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 116, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 116, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 117, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 117, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 118, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 118, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 119, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 119, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 120, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 120, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 121, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 121, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 122, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 122, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 123, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 123, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 124, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 124, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 125, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 125, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 126, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 126, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 127, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 127, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 128, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 128, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 129, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 129, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 130, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 130, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 131, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 131, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 132, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 132, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 133, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 133, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 134, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 134, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 135, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 135, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 136, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 136, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 137, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 137, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 138, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 138, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 139, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 139, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 140, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 140, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 141, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 141, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 142, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 142, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 143, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 143, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 144, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 144, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 145, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 145, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 146, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 146, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 147, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 147, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 148, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 148, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 149, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 149, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 150, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 150, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 151, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 151, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 152, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 152, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 153, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 153, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 154, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 154, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 155, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 155, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 156, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 156, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 157, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 157, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 158, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 158, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 159, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 159, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 160, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 160, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 161, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 161, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 162, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 162, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 163, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 163, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 164, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 164, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 165, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 165, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 166, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 166, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 167, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 167, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 168, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 168, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 169, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 169, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 170, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 170, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 171, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 171, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 172, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 172, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 173, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 173, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 174, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 174, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 175, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 175, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 176, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 176, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 177, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 177, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 178, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 178, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 179, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 179, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 180, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 180, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 181, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 181, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 182, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 182, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 183, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 183, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 184, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 184, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 185, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 185, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 186, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 186, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 187, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 187, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 188, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 188, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 189, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 189, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 190, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 190, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 191, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 191, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 192, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 192, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 193, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 193, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 194, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 194, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 195, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 195, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 196, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 196, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 197, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 197, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 198, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 198, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 199, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 199, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 200, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 200, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 201, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 201, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 202, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 202, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 203, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 203, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 204, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 204, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 205, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 205, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 206, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 206, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 207, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 207, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 208, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 208, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 209, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 209, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 210, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 210, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 211, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 211, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 212, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 212, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 213, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 213, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 214, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 214, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 215, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 215, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 216, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 216, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 217, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 217, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 218, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 218, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 219, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 219, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 220, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 220, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 221, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 221, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 222, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 222, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 223, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 223, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 224, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 224, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 225, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 225, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 226, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 226, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 227, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 227, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 228, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 228, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 229, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 229, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 230, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 230, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 231, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 231, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 232, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 232, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 233, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 233, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 234, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 234, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 235, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 235, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 236, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 236, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 237, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 237, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 238, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 238, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 239, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 239, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 240, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 240, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 241, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 241, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 242, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 242, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 243, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 243, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 244, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 244, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 245, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 245, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 246, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 246, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 247, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 247, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 248, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 248, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 249, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 249, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 250, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 250, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 251, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 251, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 252, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 252, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 253, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 253, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 254, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 254, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 255, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 255, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 256, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 256, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 257, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 257, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 258, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 258, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 259, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 259, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 260, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 260, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 261, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 261, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 262, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 262, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 263, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 263, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 264, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 264, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 265, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 265, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 266, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 266, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 267, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 267, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 268, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 268, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 269, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 269, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 270, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 270, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 271, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 271, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 272, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 272, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 273, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 273, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 274, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 274, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 275, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 275, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 276, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 276, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 277, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 277, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 278, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 278, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 279, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 279, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 280, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 280, skipping
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Optimised sequence: len=0 bp, GC=0.0%
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Optimised sequence: len=0 bp, GC=0.0%
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 0, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 0, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 1, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 1, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 2, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 2, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 3, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 3, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 4, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 4, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 5, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 5, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 6, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 6, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 7, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 7, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 8, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 8, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 9, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 9, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 10, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 10, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 11, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 11, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 12, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 12, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 13, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 13, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 14, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 14, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 15, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 15, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 16, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 16, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 17, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 17, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 18, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 18, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 19, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 19, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 20, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 20, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 21, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 21, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 22, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 22, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 23, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 23, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 24, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 24, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 25, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 25, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 26, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 26, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 27, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 27, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 28, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 28, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 29, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 29, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 30, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 30, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 31, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 31, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 32, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 32, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 33, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 33, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 34, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 34, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 35, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 35, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 36, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 36, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 37, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 37, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 38, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 38, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 39, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 39, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 40, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 40, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 41, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 41, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 42, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 42, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 43, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 43, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 44, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 44, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 45, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 45, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 46, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 46, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 47, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 47, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 48, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 48, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 49, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 49, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 50, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 50, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 51, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 51, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 52, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 52, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 53, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 53, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 54, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 54, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 55, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 55, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 56, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 56, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 57, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 57, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 58, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 58, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 59, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 59, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 60, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 60, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 61, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 61, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 62, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 62, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 63, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 63, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 64, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 64, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 65, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 65, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 66, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 66, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 67, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 67, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 68, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 68, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 69, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 69, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 70, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 70, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 71, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 71, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 72, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 72, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 73, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 73, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 74, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 74, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 75, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 75, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 76, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 76, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 77, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 77, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 78, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 78, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 79, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 79, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 80, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 80, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 81, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 81, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 82, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 82, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 83, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 83, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 84, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 84, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 85, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 85, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 86, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 86, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 87, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 87, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 88, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 88, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 89, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 89, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 90, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 90, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 91, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 91, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 92, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 92, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 93, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 93, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 94, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 94, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 95, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 95, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 96, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 96, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 97, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 97, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 98, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 98, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 99, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 99, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 100, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 100, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 101, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 101, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 102, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 102, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 103, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 103, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 104, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 104, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 105, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 105, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 106, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 106, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 107, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 107, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 108, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 108, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 109, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 109, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 110, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 110, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 111, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 111, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 112, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 112, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 113, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 113, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 114, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 114, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 115, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 115, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 116, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 116, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 117, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 117, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 118, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 118, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 119, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 119, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 120, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 120, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 121, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 121, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 122, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 122, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 123, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 123, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 124, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 124, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 125, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 125, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 126, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 126, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 127, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 127, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 128, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 128, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 129, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 129, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 130, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 130, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 131, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 131, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 132, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 132, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 133, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 133, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 134, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 134, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 135, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 135, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 136, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 136, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 137, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 137, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 138, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 138, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 139, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 139, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 140, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 140, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 141, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 141, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 142, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 142, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 143, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 143, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 144, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 144, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 145, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 145, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 146, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 146, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 147, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 147, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 148, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 148, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 149, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 149, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 150, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 150, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 151, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 151, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 152, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 152, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 153, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 153, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 154, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 154, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 155, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 155, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 156, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 156, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 157, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 157, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 158, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 158, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 159, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 159, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 160, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 160, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 161, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 161, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 162, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 162, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 163, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 163, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 164, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 164, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 165, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 165, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 166, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 166, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 167, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 167, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 168, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 168, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 169, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 169, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 170, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 170, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 171, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 171, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 172, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 172, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 173, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 173, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 174, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 174, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 175, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 175, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 176, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 176, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 177, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 177, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 178, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 178, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 179, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 179, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 180, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 180, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 181, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 181, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 182, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 182, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 183, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 183, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 184, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 184, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 185, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 185, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 186, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 186, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 187, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 187, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 188, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 188, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 189, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 189, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 190, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 190, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 191, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 191, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 192, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 192, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 193, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 193, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 194, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 194, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 195, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 195, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 196, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 196, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 197, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 197, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 198, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 198, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 199, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 199, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 200, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 200, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 201, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 201, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 202, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 202, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 203, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 203, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 204, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 204, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 205, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 205, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 206, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 206, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 207, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 207, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 208, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 208, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 209, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 209, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 210, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 210, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 211, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 211, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 212, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 212, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 213, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 213, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 214, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 214, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 215, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 215, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 216, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 216, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 217, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 217, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 218, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 218, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 219, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 219, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 220, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 220, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 221, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 221, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 222, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 222, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 223, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 223, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 224, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 224, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 225, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 225, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 226, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 226, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 227, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 227, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 228, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 228, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 229, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 229, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 230, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 230, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 231, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 231, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Q' at position 232, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Q' at position 232, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 233, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 233, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 234, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 234, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 235, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 235, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 236, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 236, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 237, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 237, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 238, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 238, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 239, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 239, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'R' at position 240, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'R' at position 240, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 241, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 241, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 242, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 242, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 243, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 243, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 244, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 244, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 245, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 245, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 246, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 246, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 247, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 247, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 248, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 248, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'N' at position 249, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'N' at position 249, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 250, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 250, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 251, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 251, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 252, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 252, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 253, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 253, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 254, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 254, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 255, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 255, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 256, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 256, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 257, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 257, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 258, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 258, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 259, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 259, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 260, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 260, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 261, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 261, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 262, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 262, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 263, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 263, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 264, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 264, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 265, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 265, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 266, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 266, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 267, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 267, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 268, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 268, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 269, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 269, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 270, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 270, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 271, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 271, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 272, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 272, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 273, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 273, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 274, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 274, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'I' at position 275, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'I' at position 275, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 276, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 276, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 277, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 277, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'M' at position 278, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'M' at position 278, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 279, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 279, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 280, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 280, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'A' at position 281, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'A' at position 281, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 282, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 282, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'F' at position 283, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'F' at position 283, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 284, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 284, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'D' at position 285, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'D' at position 285, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 286, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 286, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'H' at position 287, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'H' at position 287, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 288, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 288, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'T' at position 289, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'T' at position 289, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'S' at position 290, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'S' at position 290, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'L' at position 291, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'L' at position 291, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'P' at position 292, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'P' at position 292, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'K' at position 293, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'K' at position 293, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'G' at position 294, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'G' at position 294, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'V' at position 295, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'V' at position 295, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'C' at position 296, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'C' at position 296, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'E' at position 297, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'E' at position 297, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'Y' at position 298, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'Y' at position 298, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 299, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 299, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:1 | warning | Unknown amino acid 'W' at position 300, skipping
+2026-06-08 09:43:41 | WARNING  | STAGE:2 | warning | Unknown amino acid 'W' at position 300, skipping
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Optimised sequence: len=0 bp, GC=0.0%
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Optimised sequence: len=0 bp, GC=0.0%
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Designing expression cassettes
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | Designing expression cassettes
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Designed cassette for dxs: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=3293.5
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Designed cassette for dxs: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=3293.5
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Designed cassette for dxr: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=3293.5
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Designed cassette for dxr: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=3293.5
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Designed cassette for ispd: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=3293.5
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Designed cassette for ispd: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=3293.5
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Validating Stage 2 output against schema
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | Validating Stage 2 output against schema
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Schema validation: PASSED for stage_2_output
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | Schema validation: PASSED for stage_2_output
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | JSON contract [output | Stage 2 → Stage 3]: pipeline_id=f49521b5-f452-45b4-a5e5-491f2d856b56 | stage_1_output={pipeline_id, timestamp, organism, target_molecule, genomic_data} | pathway_candidates=[1 items] | gene_modifications={knockouts, overexpressions, heterologous_insertions} | codon_optimized_sequences={dxs, dxr, ispd} | expression_cassettes=[3 items] | stage_2_status=PASS
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | JSON contract [output | Stage 2 → Stage 3]: pipeline_id=f49521b5-f452-45b4-a5e5-491f2d856b56 | stage_1_output={pipeline_id, timestamp, organism, target_molecule, genomic_data} | pathway_candidates=[1 items] | gene_modifications={knockouts, overexpressions, heterologous_insertions} | codon_optimized_sequences={dxs, dxr, ispd} | expression_cassettes=[3 items] | stage_2_status=PASS
+2026-06-08 09:43:41 | DEBUG    | STAGE:1 | debug | Full JSON payload:\n{
+  "pipeline_id": "f49521b5-f452-45b4-a5e5-491f2d856b56",
+  "stage_1_output": {
+    "pipeline_id": "f49521b5-f452-45b4-a5e5-491f2d856b56",
+    "timestamp": "2026-06-08T09:43:41.734925+00:00",
+    "organism": {
+      "name": "Escherichia coli",
+      "strain": "K-12 MG1655",
+      "gem_model_id": "iML1515",
+      "doubling_time_min": 20.0,
+      "optimal_ph": 7.0,
+      "optimal_temp_c": 37.0,
+      "gram_stain": "negative"
+    },
+    "target_molecule": {
+      "name": "Lycopene",
+      "smiles": "CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C",
+      "chebi_id": "CHEBI:15938",
+      "target_titer_g_per_l": 5.0,
+      "target_yield_mol_per_mol": 0.35
+    },
+    "genomic_data": {
+      "total_genes": 4494,
+      "essential_genes": [
+        "dnaA",
+        "dnaN",
+        "dnaG",
+        "rpoB",
+        "rpoC",
+        "rpoA",
+        "gyrA",
+        "gyrB",
+        "ftsZ",
+        "ftsA",
+        "murA",
+        "murB",
+        "tufA",
+        "tufB",
+        "rplA",
+        "rplB",
+        "rplC",
+        "rplD"
+      ],
+      "available_promoters": [
+        "Ptac",
+        "Ptrc",
+        "Plac",
+        "ParaBAD",
+        "PT7",
+        "PlacUV5",
+        "Pbad",
+        "PrhaBAD"
+      ],
+      "codon_table_id": 11,
+      "gc_content_percent": 50.8
+    },
+    "data_quality_report": {
+      "completeness_score": 1.0,
+      "warnings": [],
+      "errors": []
+    },
+    "stage_1_status": "PASS"
+  },
+  "pathway_candidates": [
+    {
+      "pathway_id": "pw_lycopene_001",
+      "rank": 1,
+      "pathway_name": "Lycopene pathway #1",
+      "steps": [
+        {
+          "step_number": 1,
+          "reaction_id": "R00001",
+          "enzyme_name": "Dxs",
+          "gene_name": "dxs",
+          "ec_number": "2.2.1.7",
+          "substrate": "pyruvate + G3P",
+          "product": "DOXP",
+          "delta_g_kj_per_mol": -3.5,
+          "kcat_per_sec": 12.5,
+          "km_mm": 0.45,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        },
+        {
+          "step_number": 2,
+          "reaction_id": "R00002",
+          "enzyme_name": "Dxr",
+          "gene_name": "dxr",
+          "ec_number": "1.1.1.267",
+          "substrate": "DOXP + NADPH",
+          "product": "MEP + NADP+",
+          "delta_g_kj_per_mol": -15.2,
+          "kcat_per_sec": 8.3,
+          "km_mm": 0.12,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        },
+        {
+          "step_number": 3,
+          "reaction_id": "R00003",
+          "enzyme_name": "YgbP",
+          "gene_name": "ispD",
+          "ec_number": "2.7.7.60",
+          "substrate": "MEP + CTP",
+          "product": "CDP-ME + PPi",
+          "delta_g_kj_per_mol": -8.1,
+          "kcat_per_sec": 5.6,
+          "km_mm": 0.33,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        }
+      ],
+      "total_steps": 3,
+      "predicted_yield_mol_per_mol": 0.4305,
+      "thermodynamic_feasibility_score": 1.0,
+      "gnn_viability_score": 0.764,
+      "host_compatibility_score": 0.0
+    }
+  ],
+  "gene_modifications": {
+    "knockouts": [
+      "ldhA",
+      "adhE",
+      "frdA"
+    ],
+    "overexpressions": [],
+    "heterologous_insertions": [
+      "dxs_alt1",
+      "dxr_alt1",
+      "dxs",
+      "ispd",
+      "dxs_alt2",
+      "dxr",
+      "ispD_alt2",
+      "dxr_alt2",
+      "ispD_alt1"
+    ]
+  },
+  "codon_optimized_sequences": {
+    "dxs": "",
+    "dxr": "",
+    "ispd": ""
+  },
+  "expression_cassettes": [
+    {
+      "organism": "ecoli",
+      "gene_name": "dxs",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[dxs]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 3293.5,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 3.294
+    },
+    {
+      "organism": "ecoli",
+      "gene_name": "dxr",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[dxr]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 3293.5,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 3.294
+    },
+    {
+      "organism": "ecoli",
+      "gene_name": "ispd",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[ispd]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 3293.5,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 3.294
+    }
+  ],
+  "stage_2_status": "PASS"
+}
+2026-06-08 09:43:41 | DEBUG    | STAGE:2 | debug | Full JSON payload:\n{
+  "pipeline_id": "f49521b5-f452-45b4-a5e5-491f2d856b56",
+  "stage_1_output": {
+    "pipeline_id": "f49521b5-f452-45b4-a5e5-491f2d856b56",
+    "timestamp": "2026-06-08T09:43:41.734925+00:00",
+    "organism": {
+      "name": "Escherichia coli",
+      "strain": "K-12 MG1655",
+      "gem_model_id": "iML1515",
+      "doubling_time_min": 20.0,
+      "optimal_ph": 7.0,
+      "optimal_temp_c": 37.0,
+      "gram_stain": "negative"
+    },
+    "target_molecule": {
+      "name": "Lycopene",
+      "smiles": "CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C",
+      "chebi_id": "CHEBI:15938",
+      "target_titer_g_per_l": 5.0,
+      "target_yield_mol_per_mol": 0.35
+    },
+    "genomic_data": {
+      "total_genes": 4494,
+      "essential_genes": [
+        "dnaA",
+        "dnaN",
+        "dnaG",
+        "rpoB",
+        "rpoC",
+        "rpoA",
+        "gyrA",
+        "gyrB",
+        "ftsZ",
+        "ftsA",
+        "murA",
+        "murB",
+        "tufA",
+        "tufB",
+        "rplA",
+        "rplB",
+        "rplC",
+        "rplD"
+      ],
+      "available_promoters": [
+        "Ptac",
+        "Ptrc",
+        "Plac",
+        "ParaBAD",
+        "PT7",
+        "PlacUV5",
+        "Pbad",
+        "PrhaBAD"
+      ],
+      "codon_table_id": 11,
+      "gc_content_percent": 50.8
+    },
+    "data_quality_report": {
+      "completeness_score": 1.0,
+      "warnings": [],
+      "errors": []
+    },
+    "stage_1_status": "PASS"
+  },
+  "pathway_candidates": [
+    {
+      "pathway_id": "pw_lycopene_001",
+      "rank": 1,
+      "pathway_name": "Lycopene pathway #1",
+      "steps": [
+        {
+          "step_number": 1,
+          "reaction_id": "R00001",
+          "enzyme_name": "Dxs",
+          "gene_name": "dxs",
+          "ec_number": "2.2.1.7",
+          "substrate": "pyruvate + G3P",
+          "product": "DOXP",
+          "delta_g_kj_per_mol": -3.5,
+          "kcat_per_sec": 12.5,
+          "km_mm": 0.45,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        },
+        {
+          "step_number": 2,
+          "reaction_id": "R00002",
+          "enzyme_name": "Dxr",
+          "gene_name": "dxr",
+          "ec_number": "1.1.1.267",
+          "substrate": "DOXP + NADPH",
+          "product": "MEP + NADP+",
+          "delta_g_kj_per_mol": -15.2,
+          "kcat_per_sec": 8.3,
+          "km_mm": 0.12,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        },
+        {
+          "step_number": 3,
+          "reaction_id": "R00003",
+          "enzyme_name": "YgbP",
+          "gene_name": "ispD",
+          "ec_number": "2.7.7.60",
+          "substrate": "MEP + CTP",
+          "product": "CDP-ME + PPi",
+          "delta_g_kj_per_mol": -8.1,
+          "kcat_per_sec": 5.6,
+          "km_mm": 0.33,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        }
+      ],
+      "total_steps": 3,
+      "predicted_yield_mol_per_mol": 0.4305,
+      "thermodynamic_feasibility_score": 1.0,
+      "gnn_viability_score": 0.764,
+      "host_compatibility_score": 0.0
+    }
+  ],
+  "gene_modifications": {
+    "knockouts": [
+      "ldhA",
+      "adhE",
+      "frdA"
+    ],
+    "overexpressions": [],
+    "heterologous_insertions": [
+      "dxs_alt1",
+      "dxr_alt1",
+      "dxs",
+      "ispd",
+      "dxs_alt2",
+      "dxr",
+      "ispD_alt2",
+      "dxr_alt2",
+      "ispD_alt1"
+    ]
+  },
+  "codon_optimized_sequences": {
+    "dxs": "",
+    "dxr": "",
+    "ispd": ""
+  },
+  "expression_cassettes": [
+    {
+      "organism": "ecoli",
+      "gene_name": "dxs",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[dxs]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 3293.5,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 3.294
+    },
+    {
+      "organism": "ecoli",
+      "gene_name": "dxr",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[dxr]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 3293.5,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 3.294
+    },
+    {
+      "organism": "ecoli",
+      "gene_name": "ispd",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[ispd]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 3293.5,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 3.294
+    }
+  ],
+  "stage_2_status": "PASS"
+}
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Stage 2 summary written to logs/stage_2_summary.json
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | Stage 2 summary written to logs/stage_2_summary.json
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | === STAGE 2 COMPLETE === duration=0.06s status=PASS
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | === STAGE 2 COMPLETE === duration=0.06s status=PASS
+2026-06-08 09:43:41 | INFO     | STAGE:1 | info | Stage 2 completed in 0.06 seconds
+2026-06-08 09:43:41 | INFO     | STAGE:2 | info | Stage 2 completed in 0.06 seconds

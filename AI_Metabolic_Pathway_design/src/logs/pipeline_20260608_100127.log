@@ -1,0 +1,8 @@
+2026-06-08 10:01:27 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_100127.log
+2026-06-08 10:01:27 | INFO     | STAGE:4 | info | Starting DBTL loop: 3 cycles, 48 constructs/cycle
+2026-06-08 10:01:27 | INFO     | STAGE:4 | info | === DBTL Cycle 1 ===
+2026-06-08 10:01:27 | INFO     | STAGE:4 | info | Generating construct library: 48 constructs, genes=['crtE', 'crtB', 'crtI']
+2026-06-08 10:01:27 | DEBUG    | STAGE:4 | debug | Built 48 constructs
+2026-06-08 10:01:27 | INFO     | STAGE:4 | info | Simulating HTS screening for 48 constructs
+2026-06-08 10:01:27 | INFO     | STAGE:4 | info | Screening complete: best=C0013 (5.703 g/L), mean=1.401 g/L
+2026-06-08 10:01:27 | INFO     | STAGE:4 | info | Running Bayesian optimisation: 8 candidates

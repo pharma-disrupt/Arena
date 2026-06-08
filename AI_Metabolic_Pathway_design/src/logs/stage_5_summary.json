@@ -1,0 +1,16 @@
+{
+  "stage": 5,
+  "pipeline_id": "7b5d3abb-fe8c-4fea-8915-54d3e14f97eb",
+  "organism": "ecoli",
+  "molecule": "lycopene",
+  "scale_levels": [
+    2.0,
+    200.0,
+    20000.0
+  ],
+  "purification_recovery": 56.05,
+  "regulatory_status": "APPROVED",
+  "status": "PASS",
+  "duration_seconds": 0.0,
+  "timestamp": "2026-06-08T10:26:10.325176+00:00"
+}

@@ -1,0 +1,523 @@
+2026-06-08 09:44:52 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_094452.log
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | === STAGE 1 START === pipeline_id=1f8d856c-0eea-42ca-b720-87481509b7c7 organism=ecoli molecule=lycopene
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Loading organism config for key='ecoli'
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Organism loaded: {'name': 'Escherichia coli', 'strain': 'K-12 MG1655', 'gem_model_id': 'iML1515', 'doubling_time_min': 20.0, 'optimal_ph': 7.0, 'optimal_temp_c': 37.0, 'gram_stain': 'negative'}
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Loading molecule config for key='lycopene'
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Molecule loaded: {'name': 'Lycopene', 'smiles': 'CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C', 'chebi_id': 'CHEBI:15938', 'target_titer_g_per_l': 5.0, 'target_yield_mol_per_mol': 0.35}
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Loading genomic data for organism='ecoli'
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Genomic data loaded for ecoli: 4494 genes, 18 essential, codon table 11, GC=50.8%
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Genomic data: 4494 genes, codon table 11, GC=50.8%
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Running data quality checks
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Data quality report: score=1.000  warnings=0  errors=0
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Validating Stage 1 output against schema
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Schema validation: PASSED for stage_1_output
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | JSON contract [output | Stage 1 → Stage 2]: pipeline_id=1f8d856c-0eea-42ca-b720-87481509b7c7 | timestamp=2026-06-08T09:44:52.926468+00:00 | organism={name, strain, gem_model_id, doubling_time_min, optimal_ph} | target_molecule={name, smiles, chebi_id, target_titer_g_per_l, target_yield_mol_per_mol} | genomic_data={total_genes, essential_genes, available_promoters, codon_table_id, gc_content_percent} | data_quality_report={completeness_score, warnings, errors} | stage_1_status=PASS
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Full JSON payload:\n{
+  "pipeline_id": "1f8d856c-0eea-42ca-b720-87481509b7c7",
+  "timestamp": "2026-06-08T09:44:52.926468+00:00",
+  "organism": {
+    "name": "Escherichia coli",
+    "strain": "K-12 MG1655",
+    "gem_model_id": "iML1515",
+    "doubling_time_min": 20.0,
+    "optimal_ph": 7.0,
+    "optimal_temp_c": 37.0,
+    "gram_stain": "negative"
+  },
+  "target_molecule": {
+    "name": "Lycopene",
+    "smiles": "CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C",
+    "chebi_id": "CHEBI:15938",
+    "target_titer_g_per_l": 5.0,
+    "target_yield_mol_per_mol": 0.35
+  },
+  "genomic_data": {
+    "total_genes": 4494,
+    "essential_genes": [
+      "dnaA",
+      "dnaN",
+      "dnaG",
+      "rpoB",
+      "rpoC",
+      "rpoA",
+      "gyrA",
+      "gyrB",
+      "ftsZ",
+      "ftsA",
+      "murA",
+      "murB",
+      "tufA",
+      "tufB",
+      "rplA",
+      "rplB",
+      "rplC",
+      "rplD"
+    ],
+    "available_promoters": [
+      "Ptac",
+      "Ptrc",
+      "Plac",
+      "ParaBAD",
+      "PT7",
+      "PlacUV5",
+      "Pbad",
+      "PrhaBAD"
+    ],
+    "codon_table_id": 11,
+    "gc_content_percent": 50.8
+  },
+  "data_quality_report": {
+    "completeness_score": 1.0,
+    "warnings": [],
+    "errors": []
+  },
+  "stage_1_status": "PASS"
+}
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Stage 1 summary written to logs/stage_1_summary.json
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | === STAGE 1 COMPLETE === duration=0.00s status=PASS
+2026-06-08 09:44:52 | INFO     | STAGE:1 | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_094452.log
+2026-06-08 09:44:52 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_094452.log
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | === STAGE 2 START === pipeline_id=1f8d856c-0eea-42ca-b720-87481509b7c7
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | === STAGE 2 START === pipeline_id=1f8d856c-0eea-42ca-b720-87481509b7c7
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Input JSON received: {'pipeline_id': '1f8d856c-0eea-42ca-b720-87481509b7c7', 'timestamp': '2026-06-08T09:44:52.926468+00:00', 'organism': {'name': 'Escherichia coli', 'strain': 'K-12 MG1655', 'gem_model_id': 'iML1515', 'doubling_time_min': 20.0, 'optimal_ph': 7.0, 'optimal_temp_c': 37.0, 'gram_stain': 'negative'}, 'target_molecule': {'name': 'Lycopene', 'smiles': 'CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C', 'chebi_id': 'CHEBI:15938', 'target_titer_g_per_l': 5.0, 'target_yield_mol_per_mol': 0.35}, 'genomic_data': {'total_genes': 4494, 'essential_genes': ['dnaA', 'dnaN', 'dnaG', 'rpoB', 'rpoC', 'rpoA', 'gyrA', 'gyrB', 'ftsZ', 'ftsA', 'murA', 'murB', 'tufA', 'tufB', 'rplA', 'rplB', 'rplC', 'rplD'], 'available_promoters': ['Ptac', 'Ptrc', 'Plac', 'ParaBAD', 'PT7', 'PlacUV5', 'Pbad', 'PrhaBAD'], 'codon_table_id': 11, 'gc_content_percent': 50.8}, 'data_quality_report': {'completeness_score': 1.0, 'warnings': [], 'errors': []}, 'stage_1_status': 'PASS'}
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Input JSON received: {'pipeline_id': '1f8d856c-0eea-42ca-b720-87481509b7c7', 'timestamp': '2026-06-08T09:44:52.926468+00:00', 'organism': {'name': 'Escherichia coli', 'strain': 'K-12 MG1655', 'gem_model_id': 'iML1515', 'doubling_time_min': 20.0, 'optimal_ph': 7.0, 'optimal_temp_c': 37.0, 'gram_stain': 'negative'}, 'target_molecule': {'name': 'Lycopene', 'smiles': 'CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C', 'chebi_id': 'CHEBI:15938', 'target_titer_g_per_l': 5.0, 'target_yield_mol_per_mol': 0.35}, 'genomic_data': {'total_genes': 4494, 'essential_genes': ['dnaA', 'dnaN', 'dnaG', 'rpoB', 'rpoC', 'rpoA', 'gyrA', 'gyrB', 'ftsZ', 'ftsA', 'murA', 'murB', 'tufA', 'tufB', 'rplA', 'rplB', 'rplC', 'rplD'], 'available_promoters': ['Ptac', 'Ptrc', 'Plac', 'ParaBAD', 'PT7', 'PlacUV5', 'Pbad', 'PrhaBAD'], 'codon_table_id': 11, 'gc_content_percent': 50.8}, 'data_quality_report': {'completeness_score': 1.0, 'warnings': [], 'errors': []}, 'stage_1_status': 'PASS'}
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Validating Stage 1 input JSON
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | Validating Stage 1 input JSON
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Schema validation: PASSED for stage_1_output
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | Schema validation: PASSED for stage_1_output
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Organism: ecoli | Molecule: Lycopene
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | Organism: ecoli | Molecule: Lycopene
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Running retrosynthesis for target='Lycopene'
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | Running retrosynthesis for target='Lycopene'
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Running enzyme selection for 1 pathways
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | Running enzyme selection for 1 pathways
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Running codon optimisation
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | Running codon optimisation
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Optimised sequence: len=342 bp, GC=52.9%
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Optimised sequence: len=342 bp, GC=52.9%
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Optimised sequence: len=720 bp, GC=48.9%
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Optimised sequence: len=720 bp, GC=48.9%
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Successfully removed EcoRI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Successfully removed BamHI site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Successfully removed HindIII site from sequence
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Optimised sequence: len=453 bp, GC=48.3%
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Optimised sequence: len=453 bp, GC=48.3%
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Designing expression cassettes
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | Designing expression cassettes
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Designed cassette for dxs_alt2: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=2713.8
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Designed cassette for dxs_alt2: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=2713.8
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Designed cassette for dxr_alt2: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=2713.8
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Designed cassette for dxr_alt2: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=2713.8
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Designed cassette for ispD_alt1: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=2713.8
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Designed cassette for ispD_alt1: promoter=Plac (str=0.30), RBS=RBS_B0034 (str=1.00), predicted TPM=2713.8
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Validating Stage 2 output against schema
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | Validating Stage 2 output against schema
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Schema validation: PASSED for stage_2_output
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | Schema validation: PASSED for stage_2_output
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | JSON contract [output | Stage 2 → Stage 3]: pipeline_id=1f8d856c-0eea-42ca-b720-87481509b7c7 | stage_1_output={pipeline_id, timestamp, organism, target_molecule, genomic_data} | pathway_candidates=[1 items] | gene_modifications={knockouts, overexpressions, heterologous_insertions} | codon_optimized_sequences={dxs_alt2, dxr_alt2, ispD_alt1} | expression_cassettes=[3 items] | stage_2_status=PASS
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | JSON contract [output | Stage 2 → Stage 3]: pipeline_id=1f8d856c-0eea-42ca-b720-87481509b7c7 | stage_1_output={pipeline_id, timestamp, organism, target_molecule, genomic_data} | pathway_candidates=[1 items] | gene_modifications={knockouts, overexpressions, heterologous_insertions} | codon_optimized_sequences={dxs_alt2, dxr_alt2, ispD_alt1} | expression_cassettes=[3 items] | stage_2_status=PASS
+2026-06-08 09:44:52 | DEBUG    | STAGE:1 | debug | Full JSON payload:\n{
+  "pipeline_id": "1f8d856c-0eea-42ca-b720-87481509b7c7",
+  "stage_1_output": {
+    "pipeline_id": "1f8d856c-0eea-42ca-b720-87481509b7c7",
+    "timestamp": "2026-06-08T09:44:52.926468+00:00",
+    "organism": {
+      "name": "Escherichia coli",
+      "strain": "K-12 MG1655",
+      "gem_model_id": "iML1515",
+      "doubling_time_min": 20.0,
+      "optimal_ph": 7.0,
+      "optimal_temp_c": 37.0,
+      "gram_stain": "negative"
+    },
+    "target_molecule": {
+      "name": "Lycopene",
+      "smiles": "CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C",
+      "chebi_id": "CHEBI:15938",
+      "target_titer_g_per_l": 5.0,
+      "target_yield_mol_per_mol": 0.35
+    },
+    "genomic_data": {
+      "total_genes": 4494,
+      "essential_genes": [
+        "dnaA",
+        "dnaN",
+        "dnaG",
+        "rpoB",
+        "rpoC",
+        "rpoA",
+        "gyrA",
+        "gyrB",
+        "ftsZ",
+        "ftsA",
+        "murA",
+        "murB",
+        "tufA",
+        "tufB",
+        "rplA",
+        "rplB",
+        "rplC",
+        "rplD"
+      ],
+      "available_promoters": [
+        "Ptac",
+        "Ptrc",
+        "Plac",
+        "ParaBAD",
+        "PT7",
+        "PlacUV5",
+        "Pbad",
+        "PrhaBAD"
+      ],
+      "codon_table_id": 11,
+      "gc_content_percent": 50.8
+    },
+    "data_quality_report": {
+      "completeness_score": 1.0,
+      "warnings": [],
+      "errors": []
+    },
+    "stage_1_status": "PASS"
+  },
+  "pathway_candidates": [
+    {
+      "pathway_id": "pw_lycopene_001",
+      "rank": 1,
+      "pathway_name": "Lycopene pathway #1",
+      "steps": [
+        {
+          "step_number": 1,
+          "reaction_id": "R00001",
+          "enzyme_name": "Dxs",
+          "gene_name": "dxs",
+          "ec_number": "2.2.1.7",
+          "substrate": "pyruvate + G3P",
+          "product": "DOXP",
+          "delta_g_kj_per_mol": -3.5,
+          "kcat_per_sec": 12.5,
+          "km_mm": 0.45,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        },
+        {
+          "step_number": 2,
+          "reaction_id": "R00002",
+          "enzyme_name": "Dxr",
+          "gene_name": "dxr",
+          "ec_number": "1.1.1.267",
+          "substrate": "DOXP + NADPH",
+          "product": "MEP + NADP+",
+          "delta_g_kj_per_mol": -15.2,
+          "kcat_per_sec": 8.3,
+          "km_mm": 0.12,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        },
+        {
+          "step_number": 3,
+          "reaction_id": "R00003",
+          "enzyme_name": "YgbP",
+          "gene_name": "ispD",
+          "ec_number": "2.7.7.60",
+          "substrate": "MEP + CTP",
+          "product": "CDP-ME + PPi",
+          "delta_g_kj_per_mol": -8.1,
+          "kcat_per_sec": 5.6,
+          "km_mm": 0.33,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        }
+      ],
+      "total_steps": 3,
+      "predicted_yield_mol_per_mol": 0.4998,
+      "thermodynamic_feasibility_score": 1.0,
+      "gnn_viability_score": 0.7785,
+      "host_compatibility_score": 0.0
+    }
+  ],
+  "gene_modifications": {
+    "knockouts": [
+      "ldhA",
+      "adhE",
+      "frdA"
+    ],
+    "overexpressions": [],
+    "heterologous_insertions": [
+      "dxr_alt2",
+      "dxr",
+      "dxs",
+      "ispD_alt1",
+      "dxr_alt1",
+      "dxs_alt1",
+      "dxs_alt2",
+      "ispd",
+      "ispD_alt2"
+    ]
+  },
+  "codon_optimized_sequences": {
+    "dxs_alt2": "GAACTTTGCGAAAGCGCCGTTACCCGGTGGTGGTACGTTGACGATCATCCGTGTTGGAAAAACTGCAAATATTTTCCTATCGAGGGTGGCGCGTCAGTCTGGTCAGCTTATGACGTTGCAGAAGGCTTTTTTCCAACTCATCGCAACGACCGGGATTATAATGGACGTCAGAGCCTGGGCATACATGACAGGGAACACTCAGAAGTTAACTGCTGGATGTTTTATGCGGGTGGTGGACAGCCGAACTGCGAGCCCACCCCGCAAGACGTCGAACGCCCTCAGACCCCGAATCAGTCATACCAGATGCCGCAGATGCACAAAATGGCGTGCACGCTGAATTGG",
+    "dxr_alt2": "CAGCGGCCACCGCTGGAAATGGAGGAGTATCAGCATGAGTTCTCGCAACACCAGAAGATGAGCGTGAAATGCTACTGGATTGGTCAATGGATGGATATGCGCTTCAACTATCAACAAACCGAAGGCACCTGGTGTCGCTACCCTGATTTCATGTTTAATGGCCTTCGTGATACGCATGATAAACAGCAAGGTTACTGTAACGATTGTGTTTGGCGTTTTCAGCCGAAACCCTGCCGTGAACAATGGACCTGGAATGAATTTATGCAGCAGTATCAGTGGACCATGTACTATTGTTGTGAATACCATGATAACCCTTTCTACGAGATGAGCTTGCCCGTCACCCCGATCACACGTATTCTGGATAGAACCTCATCGTGGATGATTCTGCAGGAGGAATATTACCAGGATATGTTTACCGAGCAGACTGGAAAGAATGCGGATTCCTGCCAGAAGAAATGGTCATCAACTGAGTACGCGATGGCAGAGAACGTCACCCGCGCGTCCGACCATCCCAAATATGTGATCCAATATCCGCTGACGGGTAATTTCAGCGACGTCGGAGAGAAACTTGAGTCTTATATGGCAATTACCGAGACTTATCCATGGTACGCGTTCAAACGCCAGGACTGGGTATATGCCATGGATCGACAGTGGTGGCCGTATGAAGATTTCATCCCCGCGGGTTGCATGGAGATCAACTGCCACCTGCTCCCTCCGTCT",
+    "ispD_alt1": "TTTCGCAACTGGGTGATGGATACGCATGACAGCTATGAACCTTGGGTGCATGAGATTATTAACCGGGGTACGGCTTGCTATATGCTGGATATCGCTGGGATCGCAGGCGATGGCTTTAACCTCAAACTTACCAAATACTGTTCCATGTTCCCGCACTGGGCGGGATTTATTTTCATTTTTGACAGTAACGATGCGATCAGCGACCTGGATATGGCTTGGCTGTGCACCCAAGAGCGTTATGCTCACGGCGACAGACAGTACGATAGAGGGTATCGGACGCTGACCTCCCCGGTTAAGTGCGTGAAAATTGAAACCCGTATGTTTAAGAACGAATGCGGCCATTTTTATCGATATTACCTCATGGAGAACTGGATCATGCACAAGAAATGTGGTAGCCGGGACTGCTACATGGGCCTGACCACAATAGAGAACAACGTAATCTGGCGTAGACAT"
+  },
+  "expression_cassettes": [
+    {
+      "organism": "ecoli",
+      "gene_name": "dxs_alt2",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[dxs_alt2]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 2713.8,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 2.714
+    },
+    {
+      "organism": "ecoli",
+      "gene_name": "dxr_alt2",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[dxr_alt2]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 2713.8,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 2.714
+    },
+    {
+      "organism": "ecoli",
+      "gene_name": "ispD_alt1",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[ispD_alt1]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 2713.8,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 2.714
+    }
+  ],
+  "stage_2_status": "PASS"
+}
+2026-06-08 09:44:52 | DEBUG    | STAGE:2 | debug | Full JSON payload:\n{
+  "pipeline_id": "1f8d856c-0eea-42ca-b720-87481509b7c7",
+  "stage_1_output": {
+    "pipeline_id": "1f8d856c-0eea-42ca-b720-87481509b7c7",
+    "timestamp": "2026-06-08T09:44:52.926468+00:00",
+    "organism": {
+      "name": "Escherichia coli",
+      "strain": "K-12 MG1655",
+      "gem_model_id": "iML1515",
+      "doubling_time_min": 20.0,
+      "optimal_ph": 7.0,
+      "optimal_temp_c": 37.0,
+      "gram_stain": "negative"
+    },
+    "target_molecule": {
+      "name": "Lycopene",
+      "smiles": "CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C",
+      "chebi_id": "CHEBI:15938",
+      "target_titer_g_per_l": 5.0,
+      "target_yield_mol_per_mol": 0.35
+    },
+    "genomic_data": {
+      "total_genes": 4494,
+      "essential_genes": [
+        "dnaA",
+        "dnaN",
+        "dnaG",
+        "rpoB",
+        "rpoC",
+        "rpoA",
+        "gyrA",
+        "gyrB",
+        "ftsZ",
+        "ftsA",
+        "murA",
+        "murB",
+        "tufA",
+        "tufB",
+        "rplA",
+        "rplB",
+        "rplC",
+        "rplD"
+      ],
+      "available_promoters": [
+        "Ptac",
+        "Ptrc",
+        "Plac",
+        "ParaBAD",
+        "PT7",
+        "PlacUV5",
+        "Pbad",
+        "PrhaBAD"
+      ],
+      "codon_table_id": 11,
+      "gc_content_percent": 50.8
+    },
+    "data_quality_report": {
+      "completeness_score": 1.0,
+      "warnings": [],
+      "errors": []
+    },
+    "stage_1_status": "PASS"
+  },
+  "pathway_candidates": [
+    {
+      "pathway_id": "pw_lycopene_001",
+      "rank": 1,
+      "pathway_name": "Lycopene pathway #1",
+      "steps": [
+        {
+          "step_number": 1,
+          "reaction_id": "R00001",
+          "enzyme_name": "Dxs",
+          "gene_name": "dxs",
+          "ec_number": "2.2.1.7",
+          "substrate": "pyruvate + G3P",
+          "product": "DOXP",
+          "delta_g_kj_per_mol": -3.5,
+          "kcat_per_sec": 12.5,
+          "km_mm": 0.45,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        },
+        {
+          "step_number": 2,
+          "reaction_id": "R00002",
+          "enzyme_name": "Dxr",
+          "gene_name": "dxr",
+          "ec_number": "1.1.1.267",
+          "substrate": "DOXP + NADPH",
+          "product": "MEP + NADP+",
+          "delta_g_kj_per_mol": -15.2,
+          "kcat_per_sec": 8.3,
+          "km_mm": 0.12,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        },
+        {
+          "step_number": 3,
+          "reaction_id": "R00003",
+          "enzyme_name": "YgbP",
+          "gene_name": "ispD",
+          "ec_number": "2.7.7.60",
+          "substrate": "MEP + CTP",
+          "product": "CDP-ME + PPi",
+          "delta_g_kj_per_mol": -8.1,
+          "kcat_per_sec": 5.6,
+          "km_mm": 0.33,
+          "is_heterologous": true,
+          "source_organism": "Escherichia coli"
+        }
+      ],
+      "total_steps": 3,
+      "predicted_yield_mol_per_mol": 0.4998,
+      "thermodynamic_feasibility_score": 1.0,
+      "gnn_viability_score": 0.7785,
+      "host_compatibility_score": 0.0
+    }
+  ],
+  "gene_modifications": {
+    "knockouts": [
+      "ldhA",
+      "adhE",
+      "frdA"
+    ],
+    "overexpressions": [],
+    "heterologous_insertions": [
+      "dxr_alt2",
+      "dxr",
+      "dxs",
+      "ispD_alt1",
+      "dxr_alt1",
+      "dxs_alt1",
+      "dxs_alt2",
+      "ispd",
+      "ispD_alt2"
+    ]
+  },
+  "codon_optimized_sequences": {
+    "dxs_alt2": "GAACTTTGCGAAAGCGCCGTTACCCGGTGGTGGTACGTTGACGATCATCCGTGTTGGAAAAACTGCAAATATTTTCCTATCGAGGGTGGCGCGTCAGTCTGGTCAGCTTATGACGTTGCAGAAGGCTTTTTTCCAACTCATCGCAACGACCGGGATTATAATGGACGTCAGAGCCTGGGCATACATGACAGGGAACACTCAGAAGTTAACTGCTGGATGTTTTATGCGGGTGGTGGACAGCCGAACTGCGAGCCCACCCCGCAAGACGTCGAACGCCCTCAGACCCCGAATCAGTCATACCAGATGCCGCAGATGCACAAAATGGCGTGCACGCTGAATTGG",
+    "dxr_alt2": "CAGCGGCCACCGCTGGAAATGGAGGAGTATCAGCATGAGTTCTCGCAACACCAGAAGATGAGCGTGAAATGCTACTGGATTGGTCAATGGATGGATATGCGCTTCAACTATCAACAAACCGAAGGCACCTGGTGTCGCTACCCTGATTTCATGTTTAATGGCCTTCGTGATACGCATGATAAACAGCAAGGTTACTGTAACGATTGTGTTTGGCGTTTTCAGCCGAAACCCTGCCGTGAACAATGGACCTGGAATGAATTTATGCAGCAGTATCAGTGGACCATGTACTATTGTTGTGAATACCATGATAACCCTTTCTACGAGATGAGCTTGCCCGTCACCCCGATCACACGTATTCTGGATAGAACCTCATCGTGGATGATTCTGCAGGAGGAATATTACCAGGATATGTTTACCGAGCAGACTGGAAAGAATGCGGATTCCTGCCAGAAGAAATGGTCATCAACTGAGTACGCGATGGCAGAGAACGTCACCCGCGCGTCCGACCATCCCAAATATGTGATCCAATATCCGCTGACGGGTAATTTCAGCGACGTCGGAGAGAAACTTGAGTCTTATATGGCAATTACCGAGACTTATCCATGGTACGCGTTCAAACGCCAGGACTGGGTATATGCCATGGATCGACAGTGGTGGCCGTATGAAGATTTCATCCCCGCGGGTTGCATGGAGATCAACTGCCACCTGCTCCCTCCGTCT",
+    "ispD_alt1": "TTTCGCAACTGGGTGATGGATACGCATGACAGCTATGAACCTTGGGTGCATGAGATTATTAACCGGGGTACGGCTTGCTATATGCTGGATATCGCTGGGATCGCAGGCGATGGCTTTAACCTCAAACTTACCAAATACTGTTCCATGTTCCCGCACTGGGCGGGATTTATTTTCATTTTTGACAGTAACGATGCGATCAGCGACCTGGATATGGCTTGGCTGTGCACCCAAGAGCGTTATGCTCACGGCGACAGACAGTACGATAGAGGGTATCGGACGCTGACCTCCCCGGTTAAGTGCGTGAAAATTGAAACCCGTATGTTTAAGAACGAATGCGGCCATTTTTATCGATATTACCTCATGGAGAACTGGATCATGCACAAGAAATGTGGTAGCCGGGACTGCTACATGGGCCTGACCACAATAGAGAACAACGTAATCTGGCGTAGACAT"
+  },
+  "expression_cassettes": [
+    {
+      "organism": "ecoli",
+      "gene_name": "dxs_alt2",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[dxs_alt2]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 2713.8,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 2.714
+    },
+    {
+      "organism": "ecoli",
+      "gene_name": "dxr_alt2",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[dxr_alt2]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 2713.8,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 2.714
+    },
+    {
+      "organism": "ecoli",
+      "gene_name": "ispD_alt1",
+      "promoter": "Plac",
+      "promoter_strength": 0.3,
+      "promoter_inducible": true,
+      "promoter_inducer": "IPTG",
+      "rbs": "RBS_B0034",
+      "rbs_strength": 1.0,
+      "terminator": "T7Te",
+      "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[ispD_alt1]--[Terminator:T7Te]-3'",
+      "predicted_expression_tpm": 2713.8,
+      "desired_expression_tpm": 1000.0,
+      "expression_ratio": 2.714
+    }
+  ],
+  "stage_2_status": "PASS"
+}
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Stage 2 summary written to logs/stage_2_summary.json
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | Stage 2 summary written to logs/stage_2_summary.json
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | === STAGE 2 COMPLETE === duration=0.03s status=PASS
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | === STAGE 2 COMPLETE === duration=0.03s status=PASS
+2026-06-08 09:44:52 | INFO     | STAGE:1 | info | Stage 2 completed in 0.04 seconds
+2026-06-08 09:44:52 | INFO     | STAGE:2 | info | Stage 2 completed in 0.04 seconds

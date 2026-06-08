@@ -1,0 +1,4 @@
+2026-06-08 09:44:58 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_094458.log
+2026-06-08 09:44:58 | INFO     | STAGE:2 | info | Selecting enzymes for 5 steps in organism 'ecoli'
+2026-06-08 09:44:58 | INFO     | STAGE:2 | info | Selected enzymes for 5 pathway steps
+2026-06-08 09:44:58 | INFO     | STAGE:2 | info | Enzyme selection results saved to pipeline_output/enzyme_selection.json

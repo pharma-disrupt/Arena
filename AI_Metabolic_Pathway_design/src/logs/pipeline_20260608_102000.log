@@ -1,0 +1,5 @@
+2026-06-08 10:20:00 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_102000.log
+2026-06-08 10:20:00 | INFO     | STAGE:5 | info | Generating regulatory compliance report: ecoli K-12 MG1655 → lycopene
+2026-06-08 10:20:00 | INFO     | STAGE:5 | info | Running simulated AllerTop prediction
+2026-06-08 10:20:00 | INFO     | STAGE:5 | info | Running simulated ProTox-3 prediction
+2026-06-08 10:20:00 | INFO     | STAGE:5 | info | Regulatory assessment complete: BSL=1, GRAS=True, overall=APPROVED

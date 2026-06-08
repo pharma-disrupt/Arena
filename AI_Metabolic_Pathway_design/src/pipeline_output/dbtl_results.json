@@ -1,0 +1,53 @@
+[
+  {
+    "cycle_number": 1,
+    "constructs_tested": 48,
+    "best_titer_g_per_l": 5.259,
+    "best_construct_id": "C0013",
+    "improvement_fold": 1.0,
+    "bo_next_candidates": [
+      "C0013",
+      "C0022",
+      "C0034",
+      "C0011",
+      "C0046",
+      "C0025",
+      "C0030",
+      "C0029"
+    ]
+  },
+  {
+    "cycle_number": 2,
+    "constructs_tested": 48,
+    "best_titer_g_per_l": 30.424,
+    "best_construct_id": "C0013",
+    "improvement_fold": 5.785,
+    "bo_next_candidates": [
+      "C0013",
+      "C0022",
+      "C0034",
+      "C0011",
+      "C0046",
+      "C0025",
+      "C0030",
+      "C0029"
+    ]
+  },
+  {
+    "cycle_number": 3,
+    "constructs_tested": 48,
+    "best_titer_g_per_l": 176.009,
+    "best_construct_id": "C0013",
+    "improvement_fold": 5.785,
+    "bo_next_candidates": [
+      "C0013",
+      "C0022",
+      "C0034",
+      "C0011",
+      "C0046",
+      "C0025",
+      "C0030",
+      "C0029"
+    ]
+  }
+]

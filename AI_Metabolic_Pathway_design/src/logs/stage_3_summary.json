@@ -1,0 +1,13 @@
+{
+  "stage": 3,
+  "pipeline_id": "7b5d3abb-fe8c-4fea-8915-54d3e14f97eb",
+  "organism": "ecoli",
+  "molecule": "lycopene",
+  "fba_growth_rate": 0.8,
+  "fba_product_flux": 2.5,
+  "strain_design_algorithm": "NSGA-III + OptKnock",
+  "toxicity_risk": "MEDIUM",
+  "status": "PASS",
+  "duration_seconds": 0.07,
+  "timestamp": "2026-06-08T10:26:09.681788+00:00"
+}

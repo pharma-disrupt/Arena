@@ -1,0 +1,467 @@
+{
+  "pipeline_id": "5f78b6b1-716a-4c54-b671-7b2a817cf222",
+  "stage_3_output": {
+    "pipeline_id": "5f78b6b1-716a-4c54-b671-7b2a817cf222",
+    "stage_2_output": {
+      "pipeline_id": "5f78b6b1-716a-4c54-b671-7b2a817cf222",
+      "stage_1_output": {
+        "pipeline_id": "5f78b6b1-716a-4c54-b671-7b2a817cf222",
+        "timestamp": "2026-06-08T10:08:23.122173+00:00",
+        "organism": {
+          "name": "Escherichia coli",
+          "strain": "K-12 MG1655",
+          "gem_model_id": "iML1515",
+          "doubling_time_min": 20.0,
+          "optimal_ph": 7.0,
+          "optimal_temp_c": 37.0,
+          "gram_stain": "negative"
+        },
+        "target_molecule": {
+          "name": "Lycopene",
+          "smiles": "CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C",
+          "chebi_id": "CHEBI:15938",
+          "target_titer_g_per_l": 5.0,
+          "target_yield_mol_per_mol": 0.35
+        },
+        "genomic_data": {
+          "total_genes": 4494,
+          "essential_genes": [
+            "dnaA",
+            "dnaN",
+            "dnaG",
+            "rpoB",
+            "rpoC",
+            "rpoA",
+            "gyrA",
+            "gyrB",
+            "ftsZ",
+            "ftsA",
+            "murA",
+            "murB",
+            "tufA",
+            "tufB",
+            "rplA",
+            "rplB",
+            "rplC",
+            "rplD"
+          ],
+          "available_promoters": [
+            "Ptac",
+            "Ptrc",
+            "Plac",
+            "ParaBAD",
+            "PT7",
+            "PlacUV5",
+            "Pbad",
+            "PrhaBAD"
+          ],
+          "codon_table_id": 11,
+          "gc_content_percent": 50.8
+        },
+        "data_quality_report": {
+          "completeness_score": 1.0,
+          "warnings": [],
+          "errors": []
+        },
+        "stage_1_status": "PASS"
+      },
+      "pathway_candidates": [
+        {
+          "pathway_id": "pw_lycopene_001",
+          "rank": 1,
+          "pathway_name": "Lycopene pathway #1",
+          "steps": [
+            {
+              "step_number": 1,
+              "reaction_id": "R00001",
+              "enzyme_name": "Dxs",
+              "gene_name": "dxs",
+              "ec_number": "2.2.1.7",
+              "substrate": "pyruvate + G3P",
+              "product": "DOXP",
+              "delta_g_kj_per_mol": -3.5,
+              "kcat_per_sec": 12.5,
+              "km_mm": 0.45,
+              "is_heterologous": true,
+              "source_organism": "Escherichia coli"
+            },
+            {
+              "step_number": 2,
+              "reaction_id": "R00002",
+              "enzyme_name": "Dxr",
+              "gene_name": "dxr",
+              "ec_number": "1.1.1.267",
+              "substrate": "DOXP + NADPH",
+              "product": "MEP + NADP+",
+              "delta_g_kj_per_mol": -15.2,
+              "kcat_per_sec": 8.3,
+              "km_mm": 0.12,
+              "is_heterologous": true,
+              "source_organism": "Escherichia coli"
+            },
+            {
+              "step_number": 3,
+              "reaction_id": "R00003",
+              "enzyme_name": "YgbP",
+              "gene_name": "ispD",
+              "ec_number": "2.7.7.60",
+              "substrate": "MEP + CTP",
+              "product": "CDP-ME + PPi",
+              "delta_g_kj_per_mol": -8.1,
+              "kcat_per_sec": 5.6,
+              "km_mm": 0.33,
+              "is_heterologous": true,
+              "source_organism": "Escherichia coli"
+            }
+          ],
+          "total_steps": 3,
+          "predicted_yield_mol_per_mol": 0.5079,
+          "thermodynamic_feasibility_score": 1.0,
+          "gnn_viability_score": 0.8671,
+          "host_compatibility_score": 0.0
+        }
+      ],
+      "gene_modifications": {
+        "knockouts": [
+          "ldhA",
+          "adhE",
+          "frdA"
+        ],
+        "overexpressions": [],
+        "heterologous_insertions": [
+          "dxs_alt2",
+          "ispd",
+          "ispD_alt1",
+          "dxr",
+          "dxr_alt1",
+          "ispD_alt2",
+          "dxs_alt1",
+          "dxr_alt2",
+          "dxs"
+        ]
+      },
+      "codon_optimized_sequences": {
+        "dxs_alt1": "AACAAACGTCTTTTTGAGACCAAGCATTCAACTGTTGCGCGCTGTTACCCGATCATGAACATCAAATTCGTAGAGATTCATTGGCACGAGGATTTTCTGATGCAAATGCCCCCGGGTGTGGAAGGGTTTAAAAACTTCTGTACGGTGTGGTGGCAGTGTTGGATGACGTTTCCCAACCATGATGCTCCGCGGGTTGGCGTATGTTACGAGGGCCCTAATGATCCGAACGTATATCCGTTTGGCAACGACTGGTGCCGTTTGTGTAAAGTGTGCGGCTTCTGGGACTGTTGGGGCGATTCTTGCGCAAACGAGAAATACCCAATGAGTTTCCAGAGCGCGGATACTCATACCGAACCGCCCATGATTATGGCGCCCACTTGTTACCTGATCGACATGTGGCCGGAACAATTTTGGATCGAGAACACCGACCATCATCCCCACTGGGGCCAGTATCCGACTATGCGGGGCATAGACTGCCAAATCGACCTGGTTACATACGTGGAATCTAATGAACGGGGTTGTCGCTGGACAGCGGACCACACCCAAAAAGTTGCATCGCTGTGGCTGTTCGATATGGATTGGTGCTATAACGCTAACTCACTCGAG",
+        "dxr": "GTCCATACCCATATTGAACAGCAGTGTATGTTCCTGCGTCCGGTCACACAAAACTACGGTTACTTTAAGGGGCAAGGTGCAGGAAAAACGGATATTTATAAATTTTGCCGTGACCGCAACAAGAACTGGAGTATGACAACCTGGATGTGCGACCCGCGCAACAAAATTATTGCATATAATCACTGTCTGATCGCCGGTATTCGCAAAAACGAGTATTTCAACTGTTTCACACAGCATCCCTTTGATAAGCAACGTGAACAGATGTGTCTATTTGAATACTGTATGTATAGTGAGGGTTCATACACCAAA",
+        "ispd": "TGCGACTTTAACAAGCTGCCGTACGTGAGTATCGATGCATGTGAGAAACATGCCTGCTATACCGGTACCAACTGCGATTCGCATGTTCATATGGAGGTAGACTTTAAACCGAACATGCCTATGAGCCGCAGCGGCTCCCCAGCATCATATAAAGTGGACGTTGAGTTTCCGATATGCATGACCACCCGCATGCAAGGATGGCAGATCCTGCGCTTTGGCGGTGCGAAACACCACAGTTTTTTTCTCCAGATCGGTGAGCAACACCCTTGGATTCGGTTTATGCATCGCTGGGATCGTACAATCTGCCGTATTATCTGGCATCTATACATGGACGGCTGGGATTTCGTTAGGCACAAGATATGCAAAGAGATGGGCCGGGCGTGTTGTGCGTCCCACCAGAACTCATACAACGAATGTAAATATATTTTTTGTGACAATTACCCTGAGTTGGCTGACTTTGGCCTAGAAGGTTTTATGCATGTTAAAAGCGTGTGGGTAATCGATGTATCTGAGACTAAAATGTCCAACCCGGTTGCAAAGGGGAAATTGTGGTGCGTCGATGCGGGAGATCGCCGCTGGGACGTCAAATGTGTATCACGTTGCCGTTGCGGCGTTACCTGGCGTGGTTGCTGGCGTCTGCACTGGGAGGAAAACGTTGTGGTTCTGCGCATGTTGTGCTGGCTCAACTGGATGCACAGAACTTGTCAACGCCCTTGGGGGCTGTGCCAGTACGCGGACCATAACAAGGGATGGCATAGCTGCAACCATTGGTTTAAGCACTGCGTATTTAACGTAGAAACCCACAGAAACCCTCCGATGTATACCTGGTGCTATTTTTATTGCGTGGCGCAGGGTCTGAAAGTCACCCTGCAGCAGGTAAACTGGTGCGTTATCTCGTTCATGCATGATTGGTATCGCGACACCGCTGTCTGCTGGAAAGCGAGTAGATATCTGATCGCTCTTAGTTACGCGTATGTACAGTATGGTTTTACCAACTGTAACATGGGTCAAGGCCTTACG"
+      },
+      "expression_cassettes": [
+        {
+          "organism": "ecoli",
+          "gene_name": "dxs_alt1",
+          "promoter": "Plac",
+          "promoter_strength": 0.3,
+          "promoter_inducible": true,
+          "promoter_inducer": "IPTG",
+          "rbs": "RBS_B0034",
+          "rbs_strength": 1.0,
+          "terminator": "T7Te",
+          "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[dxs_alt1]--[Terminator:T7Te]-3'",
+          "predicted_expression_tpm": 2508.3,
+          "desired_expression_tpm": 1000.0,
+          "expression_ratio": 2.508
+        },
+        {
+          "organism": "ecoli",
+          "gene_name": "dxr",
+          "promoter": "Plac",
+          "promoter_strength": 0.3,
+          "promoter_inducible": true,
+          "promoter_inducer": "IPTG",
+          "rbs": "RBS_B0034",
+          "rbs_strength": 1.0,
+          "terminator": "T7Te",
+          "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[dxr]--[Terminator:T7Te]-3'",
+          "predicted_expression_tpm": 2508.3,
+          "desired_expression_tpm": 1000.0,
+          "expression_ratio": 2.508
+        },
+        {
+          "organism": "ecoli",
+          "gene_name": "ispd",
+          "promoter": "Plac",
+          "promoter_strength": 0.3,
+          "promoter_inducible": true,
+          "promoter_inducer": "IPTG",
+          "rbs": "RBS_B0034",
+          "rbs_strength": 1.0,
+          "terminator": "T7Te",
+          "cassette_structure": "5'-[Plac]--[RBS:RBS_B0034]--[ispd]--[Terminator:T7Te]-3'",
+          "predicted_expression_tpm": 2508.3,
+          "desired_expression_tpm": 1000.0,
+          "expression_ratio": 2.508
+        }
+      ],
+      "stage_2_status": "PASS"
+    },
+    "fba_results": {
+      "objective_value": 0.8,
+      "growth_rate_per_hour": 0.8,
+      "product_flux_mmol_per_gdw_per_hour": 2.5,
+      "substrate_uptake_mmol_per_gdw_per_hour": 10.0,
+      "theoretical_max_yield": 0.25,
+      "flux_map": {},
+      "pfba_total_flux": 10.0,
+      "fva_results": {}
+    },
+    "strain_design": {
+      "algorithm_used": "NSGA-III + OptKnock",
+      "final_knockouts": [
+        "poxB",
+        "adhE",
+        "ackA"
+      ],
+      "final_overexpressions": [
+        "dxs_alt2",
+        "ispd",
+        "ispD_alt1"
+      ],
+      "predicted_titer_g_per_l": 0.62,
+      "predicted_productivity_g_per_l_per_h": 0.0129,
+      "metabolic_burden_score": 1.0,
+      "genetic_stability_score": 0.475,
+      "pareto_front": [
+        {
+          "design_id": "design_018",
+          "knockouts": [
+            "poxB",
+            "adhE",
+            "ackA"
+          ],
+          "overexpressions": [
+            "dxs_alt2",
+            "ispd",
+            "ispD_alt1"
+          ],
+          "objectives": {
+            "product_yield_mol_per_mol": 0.327,
+            "growth_rate_per_hour": 0.65,
+            "metabolic_burden": 0.2566
+          },
+          "dominated": false,
+          "composite_score": 0.5729,
+          "yield_score": 0.4088,
+          "growth_score": 0.65,
+          "burden_score": 0.7434,
+          "stability_score": 0.655
+        },
+        {
+          "design_id": "design_007",
+          "knockouts": [
+            "poxB",
+            "adhE",
+            "ackA"
+          ],
+          "overexpressions": [
+            "dxs_alt2",
+            "ispd",
+            "ispD_alt1"
+          ],
+          "objectives": {
+            "product_yield_mol_per_mol": 0.334,
+            "growth_rate_per_hour": 0.65,
+            "metabolic_burden": 0.2801
+          },
+          "dominated": false,
+          "composite_score": 0.5717,
+          "yield_score": 0.4175,
+          "growth_score": 0.65,
+          "burden_score": 0.7199,
+          "stability_score": 0.655
+        },
+        {
+          "design_id": "design_002",
+          "knockouts": [
+            "poxB",
+            "adhE",
+            "ackA"
+          ],
+          "overexpressions": [
+            "dxs_alt2",
+            "ispd",
+            "ispD_alt1"
+          ],
+          "objectives": {
+            "product_yield_mol_per_mol": 0.3348,
+            "growth_rate_per_hour": 0.65,
+            "metabolic_burden": 0.2828
+          },
+          "dominated": false,
+          "composite_score": 0.5716,
+          "yield_score": 0.4185,
+          "growth_score": 0.65,
+          "burden_score": 0.7172,
+          "stability_score": 0.655
+        },
+        {
+          "design_id": "design_001",
+          "knockouts": [
+            "poxB",
+            "adhE",
+            "ackA"
+          ],
+          "overexpressions": [
+            "dxs_alt2",
+            "ispd",
+            "ispD_alt1"
+          ],
+          "objectives": {
+            "product_yield_mol_per_mol": 0.3355,
+            "growth_rate_per_hour": 0.65,
+            "metabolic_burden": 0.285
+          },
+          "dominated": false,
+          "composite_score": 0.5715,
+          "yield_score": 0.4194,
+          "growth_score": 0.65,
+          "burden_score": 0.715,
+          "stability_score": 0.655
+        },
+        {
+          "design_id": "design_012",
+          "knockouts": [
+            "poxB",
+            "adhE",
+            "ackA"
+          ],
+          "overexpressions": [
+            "dxs_alt2",
+            "ispd",
+            "ispD_alt1"
+          ],
+          "objectives": {
+            "product_yield_mol_per_mol": 0.3376,
+            "growth_rate_per_hour": 0.65,
+            "metabolic_burden": 0.2921
+          },
+          "dominated": false,
+          "composite_score": 0.5711,
+          "yield_score": 0.422,
+          "growth_score": 0.65,
+          "burden_score": 0.7079,
+          "stability_score": 0.655
+        }
+      ],
+      "optknock_recommendations": [
+        {
+          "gene_name": "poxB",
+          "modification_type": "knockout",
+          "expected_effect": "Reduces flux to competing pathway; increases lycopene yield",
+          "confidence_score": 0.9461,
+          "literature_evidence": true,
+          "strain_improvement_history": [
+            "Simulated OptKnock coupling score: 0.946"
+          ]
+        },
+        {
+          "gene_name": "adhE",
+          "modification_type": "knockout",
+          "expected_effect": "Reduces flux to competing pathway; increases lycopene yield",
+          "confidence_score": 0.9015,
+          "literature_evidence": true,
+          "strain_improvement_history": [
+            "Simulated OptKnock coupling score: 0.902"
+          ]
+        },
+        {
+          "gene_name": "ackA",
+          "modification_type": "knockout",
+          "expected_effect": "Reduces flux to competing pathway; increases lycopene yield",
+          "confidence_score": 0.8582,
+          "literature_evidence": true,
+          "strain_improvement_history": [
+            "Simulated OptKnock coupling score: 0.858"
+          ]
+        }
+      ]
+    },
+    "toxicity_assessment": {
+      "intermediate_toxicity_scores": {
+        "DOXP": 0.2071,
+        "MEP + NADP+": 0.3332,
+        "CDP-ME + PPi": 0.1263,
+        "Lycopene": 0.5504
+      },
+      "overall_toxicity_risk": "MEDIUM",
+      "flagged_intermediates": [
+        "Lycopene"
+      ],
+      "recommendations": [
+        "Monitor Lycopene concentration during fermentation",
+        "Perform small-scale toxicity validation before scale-up"
+      ]
+    },
+    "stage_3_status": "PASS"
+  },
+  "dbtl_cycles": [
+    {
+      "cycle_number": 1,
+      "constructs_tested": 48,
+      "best_titer_g_per_l": 0.303,
+      "best_construct_id": "C0013",
+      "improvement_fold": 1.0,
+      "bo_next_candidates": [
+        "C0013",
+        "C0034",
+        "C0022",
+        "C0011",
+        "C0046",
+        "C0030",
+        "C0025",
+        "C0018"
+      ]
+    },
+    {
+      "cycle_number": 2,
+      "constructs_tested": 48,
+      "best_titer_g_per_l": 1.63,
+      "best_construct_id": "C0013",
+      "improvement_fold": 5.38,
+      "bo_next_candidates": [
+        "C0013",
+        "C0034",
+        "C0022",
+        "C0011",
+        "C0046",
+        "C0030",
+        "C0025",
+        "C0018"
+      ]
+    },
+    {
+      "cycle_number": 3,
+      "constructs_tested": 48,
+      "best_titer_g_per_l": 8.77,
+      "best_construct_id": "C0013",
+      "improvement_fold": 5.38,
+      "bo_next_candidates": [
+        "C0013",
+        "C0034",
+        "C0022",
+        "C0011",
+        "C0046",
+        "C0030",
+        "C0025",
+        "C0018"
+      ]
+    }
+  ],
+  "fermentation_simulation": {
+    "mode": "fed-batch",
+    "duration_hours": 48.0,
+    "final_titer_g_per_l": 130.73,
+    "final_yield_g_per_g": 0.0,
+    "final_productivity_g_per_l_per_h": 2.7236,
+    "ode_convergence": true,
+    "organism_specific_events": []
+  },
+  "optimal_fermentation_conditions": {
+    "temperature_c": 37.0,
+    "ph": 7.0,
+    "do_percent_saturation": 100.0,
+    "glucose_feed_g_per_l_per_h": 0.0,
+    "agitation_rpm": 400.0,
+    "aeration_vvm": 1.0
+  },
+  "stage_4_status": "PASS"
+}

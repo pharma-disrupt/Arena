@@ -1,0 +1,15 @@
+{
+  "final_state": {
+    "biomass_g_per_l": 313.9618,
+    "product_g_per_l": 164.8754,
+    "substrate_g_per_l": 0.0,
+    "do_percent": 100.0,
+    "time_hours": 48.0
+  },
+  "events": [],
+  "feed_profile_summary": {
+    "time_hours": 71.0,
+    "feed_rate_g_per_l_per_h": 5.0,
+    "cumulative_glucose_g_per_l": 375.0
+  }
+}

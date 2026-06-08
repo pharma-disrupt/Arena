@@ -1,0 +1,21 @@
+{
+  "current_state": {
+    "time_hours": 0.0,
+    "biomass_g_per_l": 0.1,
+    "substrate_g_per_l": 20.0
+  },
+  "control_actions": {
+    "temperature_c": 0.0,
+    "ph": 0.0,
+    "do_percent": 0.0,
+    "feed_rate_g_per_l_per_h": 0.0,
+    "agitation_rpm": 400.0,
+    "aeration_vvm": 1.0
+  },
+  "predicted_state": {
+    "time_hours": 4.0,
+    "biomass_g_per_l": 0.1,
+    "product_g_per_l": 0.0,
+    "substrate_g_per_l": 20.0
+  }
+}

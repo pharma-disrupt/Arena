@@ -1,0 +1,6 @@
+2026-06-08 09:45:21 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_094521.log
+2026-06-08 09:45:21 | INFO     | STAGE:2 | info | Loaded 65 reaction rules, 59 precursors identified
+2026-06-08 09:45:21 | INFO     | STAGE:2 | info | Running MCTS for target='lycopene' in organism='Escherichia coli'
+2026-06-08 09:45:21 | INFO     | STAGE:2 | info | Running MCTS: target='lycopene', iterations=300, max_depth=8
+2026-06-08 09:45:21 | INFO     | STAGE:2 | info | Found 1 pathways, ranked top 1
+2026-06-08 09:45:21 | INFO     | STAGE:2 | info |   Rank 1: lycopene pathway #1 | yield=0.533 | thermo=1.000 | gnn=0.898 | host=1.000

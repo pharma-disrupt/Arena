@@ -1,0 +1,95 @@
+{
+  "product_location": "intracellular",
+  "chromatography": {
+    "resin": "Silica gel",
+    "mobile_phase_a": "Hexane",
+    "mobile_phase_b": "Ethyl acetate",
+    "flow_rate_ml_per_min": 3.0,
+    "expected_recovery": 0.75,
+    "expected_purity": 0.9,
+    "cost_per_run": 120.0,
+    "mode": "normal_phase"
+  },
+  "purification_train": {
+    "product_name": "lycopene",
+    "organism": "ecoli",
+    "starting_titer_g_per_l": 5.0,
+    "starting_volume_l": 200.0,
+    "total_product_g": 1000.0,
+    "recovered_product_g": 560.45,
+    "overall_recovery_percent": 56.05,
+    "final_purity_percent": 99.9,
+    "total_cost_usd": 280.23,
+    "cost_per_kg_usd": 500.0,
+    "steps": [
+      {
+        "step_number": 1,
+        "step_name": "Cell disruption (high-pressure homogenisation)",
+        "step_type": "harvest",
+        "recovery_percent": 95.0,
+        "purity_percent": 5.0,
+        "cost_per_kg": 50.0,
+        "details": {
+          "cell_disruption": "high-pressure homogenisation",
+          "disruption_efficiency": 0.95,
+          "debris_removal": "depth filtration",
+          "notes": "Gram-negative \u2014 outer membrane requires mechanical disruption"
+        }
+      },
+      {
+        "step_number": 2,
+        "step_name": "Depth filtration / Centrifugation",
+        "step_type": "clarification",
+        "recovery_percent": 92.0,
+        "purity_percent": 7.5,
+        "cost_per_kg": 30.0,
+        "details": {}
+      },
+      {
+        "step_number": 3,
+        "step_name": "Chromatography (normal_phase)",
+        "step_type": "chromatography",
+        "recovery_percent": 75.0,
+        "purity_percent": 90.0,
+        "cost_per_kg": 120.0,
+        "details": {
+          "resin": "Silica gel",
+          "mobile_phase_a": "Hexane",
+          "mobile_phase_b": "Ethyl acetate",
+          "flow_rate_ml_per_min": 3.0,
+          "expected_recovery": 0.75,
+          "expected_purity": 0.9,
+          "cost_per_run": 120.0,
+          "mode": "normal_phase"
+        }
+      },
+      {
+        "step_number": 4,
+        "step_name": "Polishing chromatography",
+        "step_type": "chromatography",
+        "recovery_percent": 90.0,
+        "purity_percent": 99.0,
+        "cost_per_kg": 200.0,
+        "details": {}
+      },
+      {
+        "step_number": 5,
+        "step_name": "Ultrafiltration / Lyophilisation",
+        "step_type": "drying",
+        "recovery_percent": 95.0,
+        "purity_percent": 99.9,
+        "cost_per_kg": 100.0,
+        "details": {}
+      }
+    ]
+  },
+  "harvest_strategy": {
+    "organism": "ecoli",
+    "product": "lycopene",
+    "product_location": "intracellular",
+    "harvest_method": "high-pressure homogenisation",
+    "disruption_efficiency": 0.95,
+    "debris_removal": "depth filtration",
+    "notes": "Gram-negative \u2014 outer membrane requires mechanical disruption"
+  }
+}

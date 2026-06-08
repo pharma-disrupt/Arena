@@ -1,0 +1,5 @@
+2026-06-08 10:17:41 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_101741.log
+2026-06-08 10:17:41 | INFO     | STAGE:5 | info | Product location: intracellular
+2026-06-08 10:17:41 | INFO     | STAGE:5 | info | Chromatography mode: normal_phase
+2026-06-08 10:17:41 | INFO     | STAGE:5 | info | Simulating purification train: lycopene in ecoli, titer=5.0 g/L, volume=200.0 L
+2026-06-08 10:17:41 | INFO     | STAGE:5 | info | Purification train complete: recovery=56.0%, purity=99.9%, cost=$500.00/kg

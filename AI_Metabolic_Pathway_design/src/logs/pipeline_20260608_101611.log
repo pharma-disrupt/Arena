@@ -1,0 +1,5 @@
+2026-06-08 10:16:11 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_101611.log
+2026-06-08 10:16:11 | INFO     | STAGE:5 | info | Running scale-up cascade: ecoli → lycopene, scales=[2.0, 200.0, 20000.0]
+2026-06-08 10:16:11 | INFO     | STAGE:5 | info | Scale 2L: kLa=5.0/h, mixing=6s, yield_loss=0.0%
+2026-06-08 10:16:11 | INFO     | STAGE:5 | info | Scale 200L: kLa=5.0/h, mixing=25s, yield_loss=5.2%
+2026-06-08 10:16:11 | INFO     | STAGE:5 | info | Scale 20000L: kLa=5.0/h, mixing=85s, yield_loss=10.4%

@@ -1,0 +1,27 @@
+2026-06-08 10:01:35 | INFO     | STAGE:UNKNOWN | __init__ | PipelineLogger initialised. Log file: logs/pipeline_20260608_100135.log
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Starting DBTL loop: 3 cycles, 48 constructs/cycle
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | === DBTL Cycle 1 ===
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Generating construct library: 48 constructs, genes=['crtE', 'crtB', 'crtI']
+2026-06-08 10:01:35 | DEBUG    | STAGE:4 | debug | Built 48 constructs
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Simulating HTS screening for 48 constructs
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Screening complete: best=C0013 (5.259 g/L), mean=1.477 g/L
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Running Bayesian optimisation: 8 candidates
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Selected 8 candidates for next cycle
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Cycle 1: best=C0013 (5.259 g/L), improvement=1.00x, next candidates=8
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | === DBTL Cycle 2 ===
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Generating construct library: 48 constructs, genes=['crtE', 'crtB', 'crtI']
+2026-06-08 10:01:35 | DEBUG    | STAGE:4 | debug | Built 48 constructs
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Simulating HTS screening for 48 constructs
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Screening complete: best=C0013 (30.424 g/L), mean=8.544 g/L
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Running Bayesian optimisation: 8 candidates
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Selected 8 candidates for next cycle
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Cycle 2: best=C0013 (30.424 g/L), improvement=5.79x, next candidates=8
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | === DBTL Cycle 3 ===
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Generating construct library: 48 constructs, genes=['crtE', 'crtB', 'crtI']
+2026-06-08 10:01:35 | DEBUG    | STAGE:4 | debug | Built 48 constructs
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Simulating HTS screening for 48 constructs
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Screening complete: best=C0013 (176.009 g/L), mean=49.430 g/L
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Running Bayesian optimisation: 8 candidates
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Selected 8 candidates for next cycle
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | Cycle 3: best=C0013 (176.009 g/L), improvement=5.79x, next candidates=8
+2026-06-08 10:01:35 | INFO     | STAGE:4 | info | DBTL loop complete: 3 cycles, best titer=176.009 g/L

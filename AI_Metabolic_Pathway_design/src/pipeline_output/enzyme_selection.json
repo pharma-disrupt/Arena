@@ -1,0 +1,207 @@
+{
+  "step_0": [
+    {
+      "gene_name": "dxs",
+      "enzyme_name": "Dxs",
+      "ec_number": "1.1.1.-",
+      "organism_source": "Escherichia coli",
+      "kcat_per_sec": 12.5,
+      "km_mm": 0.45,
+      "specificity_constant": 27.7778,
+      "host_compatibility_score": 0.95,
+      "esm2_embedding_score": 0.7091,
+      "expression_feasibility": "high",
+      "is_heterologous": true
+    },
+    {
+      "gene_name": "dxs_alt2",
+      "enzyme_name": "Dxs",
+      "ec_number": "1.1.1.00",
+      "organism_source": "Escherichia coli",
+      "kcat_per_sec": 14.493172655833147,
+      "km_mm": 0.5578842828853423,
+      "specificity_constant": 38.01835317719034,
+      "host_compatibility_score": 0.8900034076282585,
+      "esm2_embedding_score": 0.7072773510946746,
+      "expression_feasibility": "high",
+      "is_heterologous": true
+    },
+    {
+      "gene_name": "dxs_alt1",
+      "enzyme_name": "Dxs",
+      "ec_number": "1.1.1.00",
+      "organism_source": "Escherichia coli",
+      "kcat_per_sec": 8.93150532945519,
+      "km_mm": 0.3484385405638948,
+      "specificity_constant": 16.712663762879195,
+      "host_compatibility_score": 0.8142624264414147,
+      "esm2_embedding_score": 0.6139550279483265,
+      "expression_feasibility": "high",
+      "is_heterologous": true
+    }
+  ],
+  "step_1": [
+    {
+      "gene_name": "dxr",
+      "enzyme_name": "Dxr",
+      "ec_number": "1.1.1.-",
+      "organism_source": "Escherichia coli",
+      "kcat_per_sec": 8.3,
+      "km_mm": 0.12,
+      "specificity_constant": 69.1667,
+      "host_compatibility_score": 0.95,
+      "esm2_embedding_score": 0.7073,
+      "expression_feasibility": "high",
+      "is_heterologous": true
+    },
+    {
+      "gene_name": "dxr_alt1",
+      "enzyme_name": "Dxr",
+      "ec_number": "1.1.1.01",
+      "organism_source": "Escherichia coli",
+      "kcat_per_sec": 6.741813333209488,
+      "km_mm": 0.12563011260603812,
+      "specificity_constant": 38.04626569347523,
+      "host_compatibility_score": 0.8924025568974538,
+      "esm2_embedding_score": 0.6612886459442228,
+      "expression_feasibility": "high",
+      "is_heterologous": true
+    },
+    {
+      "gene_name": "dxr_alt2",
+      "enzyme_name": "Dxr",
+      "ec_number": "1.1.1.01",
+      "organism_source": "Escherichia coli",
+      "kcat_per_sec": 8.940748596464605,
+      "km_mm": 0.13517977359155398,
+      "specificity_constant": 34.711388211195256,
+      "host_compatibility_score": 0.8260895639707448,
+      "esm2_embedding_score": 0.6464914175045052,
+      "expression_feasibility": "high",
+      "is_heterologous": true
+    }
+  ],
+  "step_2": [
+    {
+      "gene_name": "idi",
+      "enzyme_name": "Idi",
+      "ec_number": "1.1.1.-",
+      "organism_source": "Escherichia coli",
+      "kcat_per_sec": 25.0,
+      "km_mm": 0.15,
+      "specificity_constant": 166.6667,
+      "host_compatibility_score": 0.95,
+      "esm2_embedding_score": 0.8322,
+      "expression_feasibility": "high",
+      "is_heterologous": true
+    },
+    {
+      "gene_name": "idi_alt2",
+      "enzyme_name": "Idi",
+      "ec_number": "1.1.1.02",
+      "organism_source": "Escherichia coli",
+      "kcat_per_sec": 18.066569277976317,
+      "km_mm": 0.18339657195028508,
+      "specificity_constant": 143.3683317707156,
+      "host_compatibility_score": 0.911779562274642,
+      "esm2_embedding_score": 0.7566764425835739,
+      "expression_feasibility": "high",
+      "is_heterologous": true
+    },
+    {
+      "gene_name": "idi_alt1",
+      "enzyme_name": "Idi",
+      "ec_number": "1.1.1.02",
+      "organism_source": "Escherichia coli",
+      "kcat_per_sec": 14.392949218619869,
+      "km_mm": 0.13344167067868204,
+      "specificity_constant": 227.55361902389657,
+      "host_compatibility_score": 0.7770954181540126,
+      "esm2_embedding_score": 0.7377620498231421,
+      "expression_feasibility": "high",
+      "is_heterologous": true
+    }
+  ],
+  "step_3": [
+    {
+      "gene_name": "ispA_alt1",
+      "enzyme_name": "Ispa",
+      "ec_number": "1.1.1.03",
+      "organism_source": "Simulated organism",
+      "kcat_per_sec": 66.61784366308473,
+      "km_mm": 3.2540138237566225,
+      "specificity_constant": 54.372124501315206,
+      "host_compatibility_score": 0.6824135941881024,
+      "esm2_embedding_score": 0.746079092632317,
+      "expression_feasibility": "medium",
+      "is_heterologous": true
+    },
+    {
+      "gene_name": "ispA_alt2",
+      "enzyme_name": "Ispa",
+      "ec_number": "1.1.1.03",
+      "organism_source": "Simulated organism",
+      "kcat_per_sec": 58.08959016529536,
+      "km_mm": 3.175021091494974,
+      "specificity_constant": 55.57679450124815,
+      "host_compatibility_score": 0.742631556134222,
+      "esm2_embedding_score": 0.6500434604577319,
+      "expression_feasibility": "medium",
+      "is_heterologous": true
+    },
+    {
+      "gene_name": "ispa",
+      "enzyme_name": "Ispa",
+      "ec_number": "1.1.1.-",
+      "organism_source": "Simulated organism",
+      "kcat_per_sec": 79.44700673013044,
+      "km_mm": 2.5224359567706935,
+      "specificity_constant": 31.4961,
+      "host_compatibility_score": 0.75,
+      "esm2_embedding_score": 0.7643,
+      "expression_feasibility": "medium",
+      "is_heterologous": true
+    }
+  ],
+  "step_4": [
+    {
+      "gene_name": "crtE_alt1",
+      "enzyme_name": "Crte",
+      "ec_number": "1.1.1.04",
+      "organism_source": "Simulated organism",
+      "kcat_per_sec": 48.22934736848265,
+      "km_mm": 1.4778741094901748,
+      "specificity_constant": 68.26163636208665,
+      "host_compatibility_score": 0.6422268874108958,
+      "esm2_embedding_score": 0.6943237315016207,
+      "expression_feasibility": "medium",
+      "is_heterologous": true
+    },
+    {
+      "gene_name": "crte",
+      "enzyme_name": "Crte",
+      "ec_number": "1.1.1.-",
+      "organism_source": "Simulated organism",
+      "kcat_per_sec": 76.21796438980601,
+      "km_mm": 1.8233274464529867,
+      "specificity_constant": 41.8016,
+      "host_compatibility_score": 0.75,
+      "esm2_embedding_score": 0.7522,
+      "expression_feasibility": "medium",
+      "is_heterologous": true
+    },
+    {
+      "gene_name": "crtE_alt2",
+      "enzyme_name": "Crte",
+      "ec_number": "1.1.1.04",
+      "organism_source": "Simulated organism",
+      "kcat_per_sec": 76.93652416823879,
+      "km_mm": 1.4429890051151726,
+      "specificity_constant": 26.30599951369117,
+      "host_compatibility_score": 0.645088757819831,
+      "esm2_embedding_score": 0.6411551261314088,
+      "expression_feasibility": "medium",
+      "is_heterologous": true
+    }
+  ]
+}

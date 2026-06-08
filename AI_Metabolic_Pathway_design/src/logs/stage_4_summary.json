@@ -1,0 +1,14 @@
+{
+  "stage": 4,
+  "pipeline_id": "7b5d3abb-fe8c-4fea-8915-54d3e14f97eb",
+  "organism": "ecoli",
+  "molecule": "lycopene",
+  "dbtl_cycles": 3,
+  "best_titer": 6.192,
+  "fermentation_mode": "fed-batch",
+  "fermentation_duration_hours": 48.0,
+  "final_product_titer": 1830.69,
+  "status": "PASS",
+  "duration_seconds": 0.64,
+  "timestamp": "2026-06-08T10:26:10.321839+00:00"
+}

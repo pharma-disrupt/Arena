@@ -1,0 +1,61 @@
+{
+  "pipeline_id": "c3cf7b33-92df-4bad-ac4f-a259ead023ec",
+  "timestamp": "2026-06-08T09:24:18.867748+00:00",
+  "organism": {
+    "name": "Escherichia coli",
+    "strain": "K-12 MG1655",
+    "gem_model_id": "iML1515",
+    "doubling_time_min": 20.0,
+    "optimal_ph": 7.0,
+    "optimal_temp_c": 37.0,
+    "gram_stain": "negative"
+  },
+  "target_molecule": {
+    "name": "Lycopene",
+    "smiles": "CC(C)=CCCC(C)=C/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C=C(C)C",
+    "chebi_id": "CHEBI:15938",
+    "target_titer_g_per_l": 5.0,
+    "target_yield_mol_per_mol": 0.35
+  },
+  "genomic_data": {
+    "total_genes": 4494,
+    "essential_genes": [
+      "dnaA",
+      "dnaN",
+      "dnaG",
+      "rpoB",
+      "rpoC",
+      "rpoA",
+      "gyrA",
+      "gyrB",
+      "ftsZ",
+      "ftsA",
+      "murA",
+      "murB",
+      "tufA",
+      "tufB",
+      "rplA",
+      "rplB",
+      "rplC",
+      "rplD"
+    ],
+    "available_promoters": [
+      "Ptac",
+      "Ptrc",
+      "Plac",
+      "ParaBAD",
+      "PT7",
+      "PlacUV5",
+      "Pbad",
+      "PrhaBAD"
+    ],
+    "codon_table_id": 11,
+    "gc_content_percent": 50.8
+  },
+  "data_quality_report": {
+    "completeness_score": 1.0,
+    "warnings": [],
+    "errors": []
+  },
+  "stage_1_status": "PASS"
+}

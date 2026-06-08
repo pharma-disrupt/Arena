@@ -1,0 +1,29 @@
+{
+  "biosafety_level": 1,
+  "biosafety_rationale": "Based on organism ecoli and 16 genetic modifications",
+  "allergenicity_score": 0.0,
+  "allergenicity_risk": "LOW",
+  "toxicity_score": 0.1,
+  "toxicity_risk": "LOW",
+  "gras_status": true,
+  "gras_notes": "E. coli K-12 derivatives are GRAS for industrial use. Not GRAS for food contact without additional approval.",
+  "antibiotic_markers_removed": true,
+  "antibiotic_marker_notes": "No antibiotic markers detected \u2014 strain is marker-free.",
+  "environmental_risk_score": 0.1,
+  "environmental_risk_level": "LOW",
+  "regulatory_recommendations": [
+    "Maintain complete documentation of all genetic modifications and strain construction history."
+  ],
+  "compliance_checklist": {
+    "biosafety_assessment_complete": true,
+    "allergenicity_assessed": true,
+    "toxicity_assessed": true,
+    "gras_status_verified": true,
+    "antibiotic_markers_removed": true,
+    "environmental_risk_assessed": true,
+    "data_integrity_verified": true,
+    "traceability_documented": true
+  },
+  "overall_assessment": "APPROVED",
+  "assessment_date": "2026-06-08T10:20:00.427211+00:00"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "pathway_id": "pw_lycopene_001",
+    "rank": 1,
+    "pathway_name": "lycopene pathway #1",
+    "steps": [
+      {
+        "step_number": 1,
+        "reaction_id": "R00001",
+        "enzyme_name": "Dxs",
+        "gene_name": "dxs",
+        "ec_number": "2.2.1.7",
+        "substrate": "pyruvate + G3P",
+        "product": "DOXP",
+        "delta_g_kj_per_mol": -3.5,
+        "kcat_per_sec": 12.5,
+        "km_mm": 0.45,
+        "is_heterologous": false,
+        "source_organism": "Escherichia coli"
+      },
+      {
+        "step_number": 2,
+        "reaction_id": "R00002",
+        "enzyme_name": "Dxr",
+        "gene_name": "dxr",
+        "ec_number": "1.1.1.267",
+        "substrate": "DOXP + NADPH",
+        "product": "MEP + NADP+",
+        "delta_g_kj_per_mol": -15.2,
+        "kcat_per_sec": 8.3,
+        "km_mm": 0.12,
+        "is_heterologous": false,
+        "source_organism": "Escherichia coli"
+      },
+      {
+        "step_number": 3,
+        "reaction_id": "R00003",
+        "enzyme_name": "YgbP",
+        "gene_name": "ispD",
+        "ec_number": "2.7.7.60",
+        "substrate": "MEP + CTP",
+        "product": "CDP-ME + PPi",
+        "delta_g_kj_per_mol": -8.1,
+        "kcat_per_sec": 5.6,
+        "km_mm": 0.33,
+        "is_heterologous": false,
+        "source_organism": "Escherichia coli"
+      }
+    ],
+    "total_steps": 3,
+    "predicted_yield_mol_per_mol": 0.4096,
+    "thermodynamic_feasibility_score": 1.0,
+    "gnn_viability_score": 0.5147,
+    "host_compatibility_score": 1.0
+  }
+]
